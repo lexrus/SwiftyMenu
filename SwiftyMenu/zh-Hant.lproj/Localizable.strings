@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  SwiftyMenu
+
+  Created by Lex on 5/23/21.
+  Copyright © 2021 lex.sh. All rights reserved.
+*/
+
+"Enable" = "啓用";
+"Folders" = "目錄";
+"Actions" = "動作";
+"About" = "關於";
+"Main window" = "主窗口";
+
+// Smart actions
+"Copy Path" = "複製路徑";
+
+// Enable View
+"system_preferences_button" = "打開系統設置";
+"system_preferences_introduction" = "請先啓用 SwiftyMenu\n\n系統設置 → 擴展 → Finder 擴展";
+"extension_enabled_message" = "🎉 太棒了! SwiftyMenu 已啓用。";
+"finder_button_introduction" = "在 Finder 菜單點擊右鍵，然後選擇自義定工具欄，再將 SwiftyMenu 的按鈕拖出來。另外，你還可以在右鍵菜單中使用 SwiftyMenu。";
+
+// Folders View
+"folders_title" = "在下列目錄中啓用 SwiftyMenu：";
+"add_folder_button" = "添加目錄";
+
+// Actions View
+"add_script_button" = "添加腳本";
+"add_application_button" = "添加程序";
+"add_copy_path_button" = "添加複製路徑";
+"chose_application_panel_title" = "選擇一個程序";
+
+"scripts_permission_informative" = "";
+"scripts_permission_message" = "為了能運行你的自定義腳本，我們需要在 Application Scripts 目錄安裝一個輔助腳本。";
+"scripts_permission_allow_button" = "允許";
+"scripts_permission_deny_button" = "拒絕";
+"collapse_context_menu" = "摺疊右鍵菜單";
+"show_swifty_button" = "在菜單中顯示 SwiftyMenu";
+
+"hud_script_installation_failed" = "安裝輔助腳本失敗";
+
+// Script View
+"script_name_label" = "名字:";
+"script_name_placeholder" = "我的腳本";
+"script_shell_label" = "Shell:";
+"script_content_label" = "腳本:";
+"script_save_button" = "保存";
+"script_cancel_button" = "取消";
+
+// Application View
+"application_name_placeholder" = "應用名稱";
+"application_hides_others" = "打開時隱藏其它應用";
+"application_save_button" = "保存";
+"application_cancel_button" = "取消";
+
+// About View
+"Privacy Policy" = "隱私協議";
+"Feedback: %@" = "意見反饋 %@";
+"feedback_subject" = "SwiftyMenu 意見反饋";
+"feedback_message" = "歡迎提出任何意見或建議。";
