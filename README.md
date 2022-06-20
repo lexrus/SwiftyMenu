@@ -1,4 +1,4 @@
-# SwiftyFinder
+# SwiftyMenu
 
 [![Swift 5.5](https://img.shields.io/badge/Swift-5.5-ED523F.svg?style=flat)](https://swift.org/)
 [![AppKit](https://img.shields.io/badge/AppKit-✓-orange)](https://developer.apple.com/xcode/swiftui/)
