@@ -14,25 +14,32 @@ struct ApplicationView: View {
 
     @State var name = ""
 
-    private var onSave: ((ActionModel) -> ())? = nil
-    private var onCancel: ((ActionModel) -> ())? = nil
+    private var onSave: ((ActionModel) -> Void)?
+    private var onCancel: ((ActionModel) -> Void)?
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+
     @State private var isChecked = false
     @State private var isNameHover = false
-    
-    init(_ action: Binding<ActionModel>, onSave: ((ActionModel) -> ())?, onCancel: ((ActionModel) -> ())?) {
+
+    init(
+        _ action: Binding<ActionModel>,
+        onSave: ((ActionModel) -> Void)?,
+        onCancel: ((ActionModel) -> Void)?
+    ) {
         self._action = action
         self.onSave = onSave
         self.onCancel = onCancel
-        
+
         isChecked = action.wrappedValue.hidesOthers
     }
 
     private var iconView: some View {
         VStack(alignment: .leading, spacing: 15) {
-            EditImageView(nsImage: action.nsImage.resized(to: NSSize(width: 128, height: 128))) { icon in
+            EditImageView(
+                nsImage: action.nsImage
+                    .resized(to: NSSize(width: 128, height: 128))
+            ) { icon in
                 action.icon = icon
             }
             .shadow(color: Color(.selectedControlColor).opacity(0.5), radius: 10, x: 0.0, y: 5)

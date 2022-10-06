@@ -11,8 +11,8 @@ import SwiftUI
 struct ActionCell: View {
 
     @Binding var action: ActionModel
-    
-    @State var hovering: Bool = false
+
+    @State var hovering = false
 
     typealias TapHandler = (String) -> Void
     typealias ToggleHandler = (Bool) -> Void
@@ -55,7 +55,7 @@ struct ActionCell: View {
                 SystemButton(imageName: "square.and.pencil") {
                     tapHandler?(action.uuid)
                 }
-                
+
                 SystemButton(imageName: "trash") {
                     deleteHandler?(action.uuid)
                 }

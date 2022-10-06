@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B06BC7E263A77BD00898BA0 /* ScriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B06BC7D263A77BD00898BA0 /* ScriptView.swift */; };
-		6B06BC82263A7A5400898BA0 /* SwiftyMenuSync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D72F84B12527864D003F3CB3 /* SwiftyMenuSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6B06BC82263A7A5400898BA0 /* SwiftyMenuSync.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D72F84B12527864D003F3CB3 /* SwiftyMenuSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6BF6B70E264B689300AE9786 /* EditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6B70D264B689300AE9786 /* EditImageView.swift */; };
 		D71014AF2642DAA400132B09 /* MacEditorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71014AE2642DAA400132B09 /* MacEditorTextView.swift */; };
 		D7118385264ADA2800A47330 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7118384264ADA2800A47330 /* ApplicationView.swift */; };
@@ -80,15 +80,15 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D72F84BD2527864D003F3CB3 /* Embed App Extensions */ = {
+		D72F84BD2527864D003F3CB3 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				6B06BC82263A7A5400898BA0 /* SwiftyMenuSync.appex in Embed App Extensions */,
+				6B06BC82263A7A5400898BA0 /* SwiftyMenuSync.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D74B6EEE2638636F00FAA85C /* Embed Frameworks */ = {
@@ -301,7 +301,7 @@
 				D72F849225278634003F3CB3 /* Sources */,
 				D72F849325278634003F3CB3 /* Frameworks */,
 				D72F849425278634003F3CB3 /* Resources */,
-				D72F84BD2527864D003F3CB3 /* Embed App Extensions */,
+				D72F84BD2527864D003F3CB3 /* Embed Foundation Extensions */,
 				D74B6EEE2638636F00FAA85C /* Embed Frameworks */,
 				D7BF8AA42656BE230055BA3C /* Embed Runner */,
 			);
@@ -345,7 +345,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = lex.sh;
 				TargetAttributes = {
 					D72F849525278634003F3CB3 = {
@@ -535,6 +535,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -598,6 +599,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -629,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 5SKD83S59G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -656,12 +659,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftyMenu/SwiftyMenu.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMenu/Preview Content\"";
-				DEVELOPMENT_TEAM = 5SKD83S59G;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5SKD83S59G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -676,7 +682,8 @@
 				MARKETING_VERSION = 0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = SwiftyMenu;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = SwiftyMenuMAS;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -689,6 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5SKD83S59G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -718,7 +726,9 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 16;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5SKD83S59G;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5SKD83S59G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -734,6 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = SwiftyMenuSync;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = SwityMenuSyncMAS;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};

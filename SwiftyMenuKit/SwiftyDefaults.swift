@@ -9,25 +9,26 @@
 import Foundation
 
 struct D {
-    
+
     @UserDefault(key: "showSwiftyMenu", defaultValue: true)
     static var showSwiftyButton: Bool
-    
+
     @UserDefault(key: "collapseContextMenu", defaultValue: false)
     static var collapseContextMenu: Bool
-    
+
     @UserDefault(key: "folders", defaultValue: [])
     static var folders: [FolderModel]
-    
+
     @UserDefault(key: "actions", defaultValue: [])
     static var actions: [ActionModel]
-    
+
 }
 
 public protocol AnyOptional {
     /// Returns `true` if `nil`, otherwise `false`.
     var isNil: Bool { get }
 }
+
 extension Optional: AnyOptional {
     public var isNil: Bool { self == nil }
 }
@@ -44,9 +45,9 @@ struct UserDefault<Value: Codable> {
     }
 
     var projectedValue: Bool {
-        return true
+        true
     }
-    
+
     private func getter() -> Value {
         if
             let data = container.data(forKey: key),
@@ -56,7 +57,7 @@ struct UserDefault<Value: Codable> {
         }
         return container.object(forKey: key) as? Value ?? defaultValue
     }
-    
+
     func anyRaw(_ value: Any) -> Codable? {
         if let any = value as? String {
             return any
@@ -69,7 +70,7 @@ struct UserDefault<Value: Codable> {
         }
         return nil
     }
-    
+
     private func setter(_ newValue: Value) {
         if let optional = newValue as? AnyOptional, optional.isNil {
             container.removeObject(forKey: key)

@@ -11,13 +11,13 @@ import SwiftUI
 struct TabButton: View {
 
     @State
-    var title: String = ""
+    var title = ""
 
     @State
-    var iconName: String = ""
+    var iconName = ""
 
     var selected = false
-    
+
     @State
     var hovering = false
 
@@ -37,9 +37,11 @@ struct TabButton: View {
             }
             .padding(8)
             .frame(minWidth: 60, minHeight: 60)
-            .background(selected
-                            ? Color(.selectedControlColor)
-                        : (hovering ? Color(.selectedControlColor).opacity(0.2) : Color.clear))
+            .background(
+                selected
+                    ? Color(.selectedControlColor)
+                    : (hovering ? Color(.selectedControlColor).opacity(0.2) : Color.clear)
+            )
             .clipShape(RoundedRectangle(cornerRadius: 6))
         }
         .whenHovered { isHovering in

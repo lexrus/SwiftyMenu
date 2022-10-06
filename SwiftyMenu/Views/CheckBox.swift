@@ -13,7 +13,7 @@ struct CheckBox: View {
     @Binding var isChecked: Bool
 
     @State private var isHovering = false
-    
+
     var handler: ((Bool) -> Void)?
 
     var body: some View {
@@ -21,7 +21,8 @@ struct CheckBox: View {
             isChecked.toggle()
             handler?(isChecked)
         } label: {
-            Image(systemName: isChecked
+            Image(
+                systemName: isChecked
                     ? "checkmark.circle.fill"
                     : "checkmark.circle"
             )
@@ -49,7 +50,7 @@ struct CheckBox: View {
 
 struct CheckBox_Previews: PreviewProvider {
     static var previews: some View {
-        CheckBox(isChecked: .constant(true)) {_ in
+        CheckBox(isChecked: .constant(true)) { _ in
 
         }
     }
@@ -58,7 +59,7 @@ struct CheckBox_Previews: PreviewProvider {
 struct CheckBox_LibraryContent: LibraryContentProvider {
     var views: [LibraryItem] {
         LibraryItem(CheckBox(isChecked: .constant(true)) { _ in
-            
+
         }, visible: true, title: "CheckBox", category: .control, matchingSignature: "cb")
     }
 }

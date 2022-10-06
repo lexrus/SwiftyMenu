@@ -6,23 +6,23 @@
 //  Copyright © 2020 lex.sh. All rights reserved.
 //
 
-import Cocoa
-import FinderSync
 import AppKit
+import Cocoa
 import Combine
+import FinderSync
 
 class SwiftyMenuSync: FIFinderSync {
 
     private var cancellable = Set<AnyCancellable>()
-    
+
     override init() {
         super.init()
-        
+
         NSLog("FinderSync() launched from %@", Bundle.main.bundlePath as NSString)
-        
+
         let urls = Set(FolderModel.enabledPaths.map(URL.init(fileURLWithPath:)))
         FIFinderSyncController.default().directoryURLs = urls
-        
+
         DistributedNotificationCenter.default().publisher(for: .FolderDidUpdate)
             .sink(receiveValue: updateFolders)
             .store(in: &cancellable)
@@ -32,46 +32,37 @@ class SwiftyMenuSync: FIFinderSync {
         let urls = Set(FolderModel.enabledPaths.map(URL.init(fileURLWithPath:)))
         FIFinderSyncController.default().directoryURLs = urls
     }
-    
+
     // MARK: - Primary Finder Sync protocol methods
-    
+
     override func beginObservingDirectory(at url: URL) {
-        // The user is now seeing the container's contents.
-        // If they see it in more than one view at a time, we're only told once.
-//        NSLog("beginObservingDirectoryAtURL: %@", url.path as NSString)
+
     }
-    
-    
+
     override func endObservingDirectory(at url: URL) {
-        // The user is no longer seeing the container's contents.
-//        NSLog("endObservingDirectoryAtURL: %@", url.path as NSString)
+
     }
-    
+
     override func requestBadgeIdentifier(for url: URL) {
-//        NSLog("requestBadgeIdentifierForURL: %@", url.path as NSString)
-        
-        // For demonstration purposes, this picks one of our two badges, or no badge at all, based on the filename.
-//        let whichBadge = abs(url.path.hash) % 3
-//        let badgeIdentifier = ["", "One", "Two"][whichBadge]
-//        FIFinderSyncController.default().setBadgeIdentifier(badgeIdentifier, for: url)
+
     }
-    
+
     // MARK: - Menu and toolbar item support
-    
+
     override var toolbarItemName: String {
-        return "SwiftyMenu"
+        "SwiftyMenu"
     }
-    
+
     override var toolbarItemToolTip: String {
-        return "SwiftyMenu, a handy Finder button for third part apps."
+        "SwiftyMenu, a handy Finder button for third part apps."
     }
-    
+
     override var toolbarItemImage: NSImage {
         let image = NSImage(named: "SwiftyMenuIcon")!
         image.isTemplate = true
         return image
     }
-    
+
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
         let menu = NSMenu(title: "SwiftyMenu")
         menu.showsStateColumn = false
@@ -95,7 +86,7 @@ class SwiftyMenuSync: FIFinderSync {
                 addSwiftyMenuItems(in: menu, hidesConfigButton: hidesConfigButton)
             }
         }
-        
+
         return menu
     }
 
@@ -130,4 +121,3 @@ class SwiftyMenuSync: FIFinderSync {
     }
 
 }
-

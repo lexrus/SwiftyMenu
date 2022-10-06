@@ -40,7 +40,11 @@ extension SwiftyMenuSync {
 
         switch action.actionType {
         case .application:
-            item = NSMenuItem(title: action.name, action: #selector(openApplication), keyEquivalent: key)
+            item = NSMenuItem(
+                title: action.name,
+                action: #selector(openApplication),
+                keyEquivalent: key
+            )
 
         case .script:
             item = NSMenuItem(title: action.name, action: #selector(openScript), keyEquivalent: key)
@@ -48,10 +52,10 @@ extension SwiftyMenuSync {
 
         item.image = action.nsImage
         item.tag = offset
-        
+
         return item
     }
-        
+
     @objc private func openApplication(_ item: NSMenuItem) {
         guard let application = item.actionModel, let path = application.applicationPath else {
             return
@@ -68,12 +72,17 @@ extension SwiftyMenuSync {
             return
         }
 
-        let scriptURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(action.name).sh")
+        let scriptURL = FileManager.default.temporaryDirectory
+            .appendingPathComponent("\(action.name).sh")
         let scriptData = action.script.data(using: .utf8)
 
-        if FileManager.default.createFile(atPath: scriptURL.path, contents: scriptData, attributes: [
-            FileAttributeKey.posixPermissions: 0o755
-        ]) {
+        if FileManager.default.createFile(
+            atPath: scriptURL.path,
+            contents: scriptData,
+            attributes: [
+                FileAttributeKey.posixPermissions: 0o755,
+            ]
+        ) {
             os_log(.debug, "script copied to %@", scriptURL.path)
         } else {
             os_log(.debug, "failed to copy script file")
@@ -91,13 +100,21 @@ extension SwiftyMenuSync {
     // MARK: - Configure
 
     var addFolderItem: NSMenuItem {
-        let item = NSMenuItem(title: NSLocalizedString("add_current_folder", comment: ""), action: #selector(addFolder), keyEquivalent: "")
+        let item = NSMenuItem(
+            title: NSLocalizedString("add_current_folder", comment: ""),
+            action: #selector(addFolder),
+            keyEquivalent: ""
+        )
         item.image = NSImage(named: "AddFolderIcon")
         return item
     }
 
-    var configMenuItem: NSMenuItem  {
-        let item = NSMenuItem(title: "SwiftyMenu", action: #selector(presentConfig), keyEquivalent: "")
+    var configMenuItem: NSMenuItem {
+        let item = NSMenuItem(
+            title: "SwiftyMenu",
+            action: #selector(presentConfig),
+            keyEquivalent: ""
+        )
         item.image = NSImage(named: "MenuIcon")
         return item
     }

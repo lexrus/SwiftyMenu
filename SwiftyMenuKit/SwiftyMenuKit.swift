@@ -6,12 +6,12 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import Foundation
 import AppKit
-import OSLog
 import FinderSync
+import Foundation
+import OSLog
 
-public struct SwiftyMenuKit {
+public enum SwiftyMenuKit {
 
     private static var mainScriptsDirectory: URL = {
         let manager = FileManager.default
@@ -88,7 +88,7 @@ public struct SwiftyMenuKit {
 
             // It requires 0700 to execute
             if FileManager.default.createFile(atPath: runnerURL.path, contents: data, attributes: [
-                FileAttributeKey.posixPermissions: 0o755
+                FileAttributeKey.posixPermissions: 0o755,
             ]) {
                 completionHandler(true)
             } else {
@@ -112,16 +112,23 @@ public struct SwiftyMenuKit {
 
         do {
             if FileManager.default.fileExists(atPath: runnerURL.path) {
-                if try FileManager.default.attributesOfItem(atPath: runnerURL.path).contains(where: {
-                    $0.key == .posixPermissions && ($0.value as? Int) ?? 0 > 0o700
-                }) {
+                if try FileManager.default.attributesOfItem(atPath: runnerURL.path)
+                    .contains(where: {
+                        $0.key == .posixPermissions && ($0.value as? Int) ?? 0 > 0o700
+                    })
+                {
                     return true
                 } else {
                     try FileManager.default.removeItem(at: runnerURL)
                 }
             }
         } catch {
-            os_log(.debug, "failed to remove runner: %@ %@", runnerURL.path, error.localizedDescription)
+            os_log(
+                .debug,
+                "failed to remove runner: %@ %@",
+                runnerURL.path,
+                error.localizedDescription
+            )
         }
 
         return false
@@ -134,7 +141,7 @@ public struct SwiftyMenuKit {
 
         if let folderURL = folderURL {
             comps.queryItems = [
-                .init(name: "folder", value: folderURL.path)
+                .init(name: "folder", value: folderURL.path),
             ]
         }
 
@@ -147,7 +154,11 @@ public struct SwiftyMenuKit {
             openConfig.activates = true
             openConfig.createsNewApplicationInstance = true
 
-            NSWorkspace.shared.open([url], withApplicationAt: Bundle.runnerAppURL, configuration: openConfig) { app, err in
+            NSWorkspace.shared.open(
+                [url],
+                withApplicationAt: Bundle.runnerAppURL,
+                configuration: openConfig
+            ) { app, err in
                 if let err = err {
                     os_log(.error, "Failed to open runner: %@", err.localizedDescription)
                 } else {
@@ -161,7 +172,9 @@ public struct SwiftyMenuKit {
         }
     }
 
-    public static func showMainApp(completionHandler: ((NSRunningApplication?, Error?) -> Void)? = nil) {
+    public static func showMainApp(
+        completionHandler: ((NSRunningApplication?, Error?) -> Void)? = nil
+    ) {
         let appURL = Bundle.appRootURL
 
         let openConfig = NSWorkspace.OpenConfiguration()
@@ -195,7 +208,7 @@ public struct SwiftyMenuKit {
             "Siri",
             "Stocks",
             "Time Machine",
-            "Videos"
+            "Videos",
         ].contains { $0.lowercased() == appName.lowercased() }
     }
 
@@ -224,10 +237,11 @@ extension Bundle {
 
 }
 
-private let runnerContent = """
-#!/bin/sh
-action="$1"
-shift 1
-"$action" "$@"
-echo "$action\n$@" >/tmp/swiftymenu.log
-"""
+private let runnerContent =
+    """
+    #!/bin/sh
+    action="$1"
+    shift 1
+    "$action" "$@"
+    echo "$action\n$@" >/tmp/swiftymenu.log
+    """

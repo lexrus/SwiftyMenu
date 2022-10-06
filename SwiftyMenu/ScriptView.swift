@@ -11,24 +11,24 @@ import SwiftUI
 struct ScriptView: View {
 
     @Binding var action: ActionModel
-    
-    let onSave: ((ActionModel) -> ())?
-    let onCancel: ((ActionModel) -> ())?
+
+    let onSave: ((ActionModel) -> Void)?
+    let onCancel: ((ActionModel) -> Void)?
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-        
+
     private var icon: some View {
-        return EditImageView(nsImage: action.nsImage) { imageData in
+        EditImageView(nsImage: action.nsImage) { imageData in
             action.icon = imageData
         }
     }
-    
+
     var body: some View {
         HStack(alignment: .center, spacing: 0) {
             icon
                 .cornerRadius(5)
                 .padding()
-            
+
             Color(.separatorColor)
                 .frame(maxWidth: 1, maxHeight: .infinity)
 
@@ -38,22 +38,24 @@ struct ScriptView: View {
                         .frame(width: 48, alignment: .trailing)
                     TextField(
                         "script_name_placeholder",
-                        text: $action.name)
-                        .frame(minWidth: 100, idealWidth: 300, maxWidth: .infinity)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        text: $action.name
+                    )
+                    .frame(minWidth: 100, idealWidth: 300, maxWidth: .infinity)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
-                
+
                 HStack {
                     Text("script_shell_label")
                         .frame(width: 48, alignment: .trailing)
-                        
+
                     TextField(
                         "/bin/bash",
-                        text: $action.shell)
-                        .frame(minWidth: 100, idealWidth: 300, maxWidth: .infinity)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        text: $action.shell
+                    )
+                    .frame(minWidth: 100, idealWidth: 300, maxWidth: .infinity)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
-                
+
                 HStack(alignment: .top) {
                     Text("script_content_label")
                         .frame(width: 48, alignment: .trailing)
@@ -61,16 +63,13 @@ struct ScriptView: View {
                         text: $action.script,
                         isEditable: true,
                         font: NSFont(name: "Menlo", size: 12),
-                        onEditingChanged: {
+                        onEditingChanged: {}, onCommit: {}, onTextChange: { _ in
 
-                        }, onCommit: {
-
-                        }, onTextChange: { text in
-
-                        })
-                        .padding([.top, .bottom], 5)
-                        .border(Color(.separatorColor))
-                        .frame(minWidth: 130, idealWidth: 320, maxWidth: .infinity, minHeight: 280)
+                        }
+                    )
+                    .padding([.top, .bottom], 5)
+                    .border(Color(.separatorColor))
+                    .frame(minWidth: 130, idealWidth: 320, maxWidth: .infinity, minHeight: 280)
                 }
 
                 HStack {

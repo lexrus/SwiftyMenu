@@ -6,15 +6,15 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import Foundation
 import AppKit
+import Foundation
 import OSLog
 
 extension Runner {
 
     func runApp(_ path: String, items: [String], hidesOthers: Bool = false) {
         runWithFolderAccess {
-            
+
             var urls = items.compactMap {
                 URL(fileURLWithPath: $0).standardized
             }
@@ -49,14 +49,18 @@ extension Runner {
                 )
             } catch {
                 os_log(.error, "Failed to open: %{public}s", error.localizedDescription)
-                
+
                 NSWorkspace.shared.open(
                     urls,
                     withApplicationAt: URL(fileURLWithPath: path),
                     configuration: openConfig
-                ) { app, err in
+                ) { _, err in
                     if let err = err {
-                        os_log(.error, "Failed to open application: %{public}s", err.localizedDescription)
+                        os_log(
+                            .error,
+                            "Failed to open application: %{public}s",
+                            err.localizedDescription
+                        )
                     }
                 }
             }
@@ -70,7 +74,10 @@ extension Runner {
             if urls.count == 1, let first = urls.first {
                 NSPasteboard.general.setString(first.path, forType: .string)
             } else {
-                NSPasteboard.general.setString(urls.map(\.path).joined(separator: "\n"), forType: .string)
+                NSPasteboard.general.setString(
+                    urls.map(\.path).joined(separator: "\n"),
+                    forType: .string
+                )
             }
 
         default:

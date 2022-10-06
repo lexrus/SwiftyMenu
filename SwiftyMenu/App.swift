@@ -6,8 +6,8 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import SwiftUI
 import OSLog
+import SwiftUI
 
 @main
 struct SwiftMenu: App {
@@ -15,7 +15,7 @@ struct SwiftMenu: App {
     @StateObject var hud = HUDState()
 
     @State
-    var selectedIndex: Int = 0
+    var selectedIndex = 0
 
     enum TabItems: Int, CaseIterable {
         case enable
@@ -40,7 +40,7 @@ struct SwiftMenu: App {
             case .about: return "info.circle.fill"
             }
         }
-        
+
         var detailView: AnyView {
             switch self {
             case .enable: return AnyView(EnableView())
@@ -50,7 +50,7 @@ struct SwiftMenu: App {
             }
         }
     }
-    
+
     var body: some Scene {
         WindowGroup("SwiftyMenu") {
             VStack(spacing: 0) {
@@ -64,7 +64,11 @@ struct SwiftMenu: App {
             .toolbar {
                 HStack(alignment: .center, spacing: 15) {
                     ForEach(TabItems.allCases, id: \.rawValue) { item in
-                        TabButton(title: item.title, iconName: item.iconName, selected: selectedIndex == item.rawValue) {
+                        TabButton(
+                            title: item.title,
+                            iconName: item.iconName,
+                            selected: selectedIndex == item.rawValue
+                        ) {
                             withAnimation(.easeOut) {
                                 selectedIndex = item.rawValue
                             }

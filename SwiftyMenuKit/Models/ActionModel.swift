@@ -6,8 +6,8 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import Foundation
 import AppKit
+import Foundation
 
 extension Notification.Name {
     public static let ActionDidUpdate = Notification.Name("ActionDidUpdate")
@@ -69,7 +69,12 @@ extension NSImage {
             bitmapRep.size = newSize
             NSGraphicsContext.saveGraphicsState()
             NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: bitmapRep)
-            draw(in: NSRect(x: 0, y: 0, width: newSize.width, height: newSize.height), from: .zero, operation: .copy, fraction: 1.0)
+            draw(
+                in: NSRect(x: 0, y: 0, width: newSize.width, height: newSize.height),
+                from: .zero,
+                operation: .copy,
+                fraction: 1.0
+            )
             NSGraphicsContext.restoreGraphicsState()
 
             let resizedImage = NSImage(size: newSize)

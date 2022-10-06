@@ -18,8 +18,10 @@ struct MouseInsideModifier: ViewModifier {
     func body(content: Content) -> some View {
         content.background(
             GeometryReader { proxy in
-                Representable(mouseIsInside: mouseIsInside,
-                              frame: proxy.frame(in: .global))
+                Representable(
+                    mouseIsInside: mouseIsInside,
+                    frame: proxy.frame(in: .global)
+                )
             }
         )
     }
@@ -52,13 +54,15 @@ struct MouseInsideModifier: ViewModifier {
             let options: NSTrackingArea.Options = [
                 .mouseEnteredAndExited,
                 .inVisibleRect,
-                .activeInKeyWindow
+                .activeInKeyWindow,
             ]
 
-            let trackingArea = NSTrackingArea(rect: frame,
-                                              options: options,
-                                              owner: context.coordinator,
-                                              userInfo: nil)
+            let trackingArea = NSTrackingArea(
+                rect: frame,
+                options: options,
+                owner: context.coordinator,
+                userInfo: nil
+            )
 
             view.addTrackingArea(trackingArea)
 

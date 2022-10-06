@@ -18,7 +18,7 @@ struct FolderCell: View {
 
     @Binding var folder: FolderModel
 
-    @State var hovering: Bool = false
+    @State var hovering = false
 
     init(
         _ folder: Binding<FolderModel>,

@@ -9,8 +9,8 @@
 import SwiftUI
 
 final class HUDState: ObservableObject {
-    @Published var isPresented: Bool = false
-    var title: String = ""
+    @Published var isPresented = false
+    var title = ""
 
     func show(_ title: String) {
         self.title = NSLocalizedString(title, comment: "")
@@ -30,7 +30,12 @@ struct HUD<Content: View>: View {
             .background(
                 Capsule()
                     .foregroundColor(Color.white)
-                    .shadow(color: Color.black.opacity(0.15), radius: 12, x: 0, y: 5)
+                    .shadow(
+                        color: Color.black.opacity(0.15),
+                        radius: 12,
+                        x: 0,
+                        y: 5
+                    )
             )
             .foregroundColor(.black)
             .font(.system(size: 14, weight: .medium, design: .rounded))

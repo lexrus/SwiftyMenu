@@ -6,17 +6,17 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import SwiftUI
 import OSLog
+import SwiftUI
 
 struct FoldersView: View {
 
     @Environment(\.openURL) var openURL
-    
+
     @State var folders: [FolderModel] = []
 
-    @State var refreshId = UUID()
-    
+    @State var refreshID = UUID()
+
     var body: some View {
         VStack(alignment: .leading) {
             Text("folders_title")
@@ -36,11 +36,14 @@ struct FoldersView: View {
                     }
                 }
             }
-            .onReceive(DistributedNotificationCenter.default().publisher(for: .FolderDidUpdate)) { _ in
+            .onReceive(
+                DistributedNotificationCenter.default()
+                    .publisher(for: .FolderDidUpdate)
+            ) { _ in
                 folders = D.folders
-                refreshId = UUID()
+                refreshID = UUID()
             }
-            .id(refreshId)
+            .id(refreshID)
             .overlay(
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(Color(.separatorColor), lineWidth: 1)

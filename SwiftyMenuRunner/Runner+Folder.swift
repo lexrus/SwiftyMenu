@@ -6,8 +6,8 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import Foundation
 import AppKit
+import Foundation
 import OSLog
 
 extension Runner {
@@ -102,7 +102,7 @@ extension Runner {
             folder.bookmarkData = bookmarkData
             folders.append(folder)
         }
-        
+
         D.folders = folders
     }
 

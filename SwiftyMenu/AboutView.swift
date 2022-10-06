@@ -19,7 +19,12 @@ struct AboutView: View {
             Image(nsImage: NSImage(named: "AppIcon")!)
                 .resizable()
                 .frame(width: 64, height: 64)
-                .shadow(color: Color(.sRGB, red: 0.1, green: 0.3, blue: 1, opacity: 0.3), radius: 10, x: 0, y: 5)
+                .shadow(
+                    color: Color(.sRGB, red: 0.1, green: 0.3, blue: 1, opacity: 0.3),
+                    radius: 10,
+                    x: 0,
+                    y: 5
+                )
 
             Text("SwiftyMenu")
                 .font(.system(size: 20, weight: .medium, design: .rounded))
@@ -59,7 +64,7 @@ struct AboutView: View {
 
         comps.queryItems = [
             .init(name: "subject", value: subject),
-            .init(name: "body", value: body)
+            .init(name: "body", value: body),
         ]
 
         if let url = comps.url {

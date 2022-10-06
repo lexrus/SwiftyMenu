@@ -6,8 +6,8 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import Foundation
 import Cocoa
+import Foundation
 import OSLog
 
 extension SwiftyMenuSync {
@@ -20,7 +20,7 @@ extension SwiftyMenuSync {
         let arguments = [
             shell,
             scriptURL.path,
-            arguments.joined(separator: " ")
+            arguments.joined(separator: " "),
         ]
 
         do {
@@ -41,7 +41,7 @@ extension SwiftyMenuSync {
         comps.host = "runApp"
         comps.queryItems = [
             .init(name: "path", value: applicationPath),
-            .init(name: "hidesOthers", value: hidesOthers ? "true" : "false")
+            .init(name: "hidesOthers", value: hidesOthers ? "true" : "false"),
         ]
 
         validTargets().forEach {
@@ -55,7 +55,11 @@ extension SwiftyMenuSync {
             openConfig.activates = true
             openConfig.createsNewApplicationInstance = true
 
-            NSWorkspace.shared.open([url], withApplicationAt: Bundle.runnerAppURL, configuration: openConfig) { app, err in
+            NSWorkspace.shared.open(
+                [url],
+                withApplicationAt: Bundle.runnerAppURL,
+                configuration: openConfig
+            ) { app, err in
                 if let err = err {
                     Self.alert(err.localizedDescription)
                     os_log(.error, "Failed to open runner: %@", err.localizedDescription)

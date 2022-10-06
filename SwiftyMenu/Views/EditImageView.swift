@@ -7,26 +7,26 @@
 //
 
 import Foundation
-import SwiftUI
 import Quartz
+import SwiftUI
 
 struct EditImageView: View {
     @State var nsImage: NSImage?
-    
-    let onImageUpdate: ((Data?) -> ())?
-    
-    @State private var hovering: Bool = false
-    
+
+    let onImageUpdate: ((Data?) -> Void)?
+
+    @State private var hovering = false
+
     var body: some View {
         ZStack(alignment: .bottom) {
             Group {
-            Image(nsImage: nsImage!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(2)
-                .scaleEffect(hovering ? 1.2 : 1)
-                .transition(.scale)
-                .shadow(color: .black.opacity(0.5), radius: 8, x: 0, y: 3)
+                Image(nsImage: nsImage!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(2)
+                    .scaleEffect(hovering ? 1.2 : 1)
+                    .transition(.scale)
+                    .shadow(color: .black.opacity(0.5), radius: 8, x: 0, y: 3)
             }.padding(10)
             Group {
                 Image(systemName: "photo")
@@ -56,10 +56,11 @@ struct EditImageView: View {
             }
         }
         .onTapGesture {
-            
+
             let pictureTaker = IKPictureTaker.pictureTaker()
             if pictureTaker!.runModal() == NSApplication.ModalResponse.OK.rawValue {
-                self.nsImage = pictureTaker?.outputImage().resized(to: NSSize(width: 256, height: 256))
+                self.nsImage = pictureTaker?.outputImage()
+                    .resized(to: NSSize(width: 256, height: 256))
                 onImageUpdate?(self.nsImage?.tiffRepresentation)
             }
         }

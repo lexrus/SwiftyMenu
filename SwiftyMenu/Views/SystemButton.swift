@@ -11,12 +11,12 @@ import SwiftUI
 struct SystemButton: View {
 
     let imageName: String
-    
+
     var handler: () -> Void
 
     @State var isHovering = false
 
-    @State private var primaryColor: Color = Color(.textColor)
+    @State private var primaryColor = Color(.textColor)
 
     var body: some View {
         Button(action: handler) {
@@ -38,9 +38,7 @@ struct SystemButton: View {
 
 struct SystemButton_Previews: PreviewProvider {
     static var previews: some View {
-        SystemButton(imageName: "trash") {
-
-        }
+        SystemButton(imageName: "trash") {}
     }
 }
 

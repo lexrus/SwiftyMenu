@@ -11,26 +11,30 @@ import SwiftUI
 struct ActionsView: View {
 
     @EnvironmentObject var hud: HUDState
-    
+
     @State var actions: [ActionModel] = []
-    
+
     @State var showScriptView = false
 
-    @State private var currentActionModel: ActionModel = ActionModel.defaultScript
-    
+    @State private var currentActionModel = ActionModel.defaultScript
+
     @State private var dragOver = false
 
     @State private var collapseContextMenu = D.collapseContextMenu
 
     @State private var showSwiftyButton = D.showSwiftyButton
-    
+
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 10) {
                 HStack(spacing: 0) {
                     Toggle(isOn: $collapseContextMenu) {
                         Text("collapse_context_menu")
-                            .foregroundColor(collapseContextMenu ? Color(.selectedTextColor) : Color(.disabledControlTextColor))
+                            .foregroundColor(
+                                collapseContextMenu
+                                    ? Color(.selectedTextColor)
+                                    : Color(.disabledControlTextColor)
+                            )
                             .font(.system(size: 13, weight: .regular, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
@@ -42,7 +46,11 @@ struct ActionsView: View {
                 HStack(spacing: 0) {
                     Toggle(isOn: $showSwiftyButton) {
                         Text("show_swifty_button")
-                            .foregroundColor(showSwiftyButton ? Color(.selectedTextColor) : Color(.disabledControlTextColor))
+                            .foregroundColor(
+                                showSwiftyButton
+                                    ? Color(.selectedTextColor)
+                                    : Color(.disabledControlTextColor)
+                            )
                             .font(.system(size: 13, weight: .regular, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
@@ -54,7 +62,7 @@ struct ActionsView: View {
                 Spacer()
             }
             .padding(.init(top: 10, leading: 28, bottom: 10, trailing: 28))
-            .background(Color.init(.windowBackgroundColor))
+            .background(Color(.windowBackgroundColor))
 
             List {
                 ForEach(0..<actions.count, id: \.self) { index in
@@ -83,7 +91,7 @@ struct ActionsView: View {
             }
             .onDrop(of: ["public.file-url"], isTargeted: $dragOver) { providers -> Bool in
                 providers.forEach { p in
-                    p.loadDataRepresentation(forTypeIdentifier: "public.file-url") { (data, error) in
+                    p.loadDataRepresentation(forTypeIdentifier: "public.file-url") { data, _ in
                         if
                             let data = data,
                             let path = String(data: data, encoding: .utf8),
@@ -133,7 +141,7 @@ struct ActionsView: View {
                 Spacer()
             }
             .padding()
-            .background(Color.init(.windowBackgroundColor))
+            .background(Color(.windowBackgroundColor))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .sheet(isPresented: $showScriptView) {
@@ -143,7 +151,7 @@ struct ActionsView: View {
                 } else {
                     actions.insert(action, at: 0)
                 }
-                
+
                 save()
             } onCancel: { _ in
 
@@ -159,8 +167,16 @@ struct ActionsView: View {
             let alert = NSAlert()
             alert.informativeText = runnerURL.path
             alert.messageText = NSLocalizedString("scripts_permission_message", comment: "")
-            alert.addButton(withTitle: NSLocalizedString("scripts_permission_allow_button", comment: ""))
-            alert.addButton(withTitle: NSLocalizedString("scripts_permission_deny_button", comment: ""))
+            alert
+                .addButton(withTitle: NSLocalizedString(
+                    "scripts_permission_allow_button",
+                    comment: ""
+                ))
+            alert
+                .addButton(withTitle: NSLocalizedString(
+                    "scripts_permission_deny_button",
+                    comment: ""
+                ))
 
             let response = alert.runModal()
             switch response {
@@ -188,11 +204,11 @@ struct ActionsView: View {
         currentActionModel = getCurrentActionModel()
         showScriptView = true
     }
-    
+
     private func getCurrentActionModel(of uuid: String? = nil) -> ActionModel {
-        return actions.first(where: { $0.uuid == uuid }) ?? ActionModel.defaultScript
+        actions.first(where: { $0.uuid == uuid }) ?? ActionModel.defaultScript
     }
-    
+
     private func chooseApplication() {
         currentActionModel = getCurrentActionModel()
 
@@ -211,12 +227,12 @@ struct ActionsView: View {
             save()
         }
     }
-    
+
     private func addApplicationAction(_ path: String) {
         let action = ActionModel(applicationPath: path)
         let icon = NSWorkspace.shared.icon(forFile: path)
         let compressIcon = icon.resized(to: NSSize(width: 256, height: 256))
-        
+
         action.icon = compressIcon.tiffRepresentation
 
         actions.insert(action, at: 0)
@@ -234,28 +250,31 @@ struct ActionsView: View {
 
         save()
     }
-    
+
     private func save() {
         D.actions = actions
         DistributedNotificationCenter.default()
             .post(name: .ActionDidUpdate, object: nil)
     }
-    
-    private var localConfigUrl: URL? {
-        guard let url = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first else {
+
+    private var localConfigURL: URL? {
+        guard let url = FileManager.default.urls(
+            for: .applicationSupportDirectory,
+            in: .userDomainMask
+        ).first else {
             return nil
         }
-        
+
         return url.appendingPathComponent("ActionsConfig")
     }
 }
 
 struct SheetView: View {
     @Binding var actionModel: ActionModel
-    
-    let onSave: ((ActionModel) -> ())?
-    let onCancel: ((ActionModel) -> ())?
-    
+
+    let onSave: ((ActionModel) -> Void)?
+    let onCancel: ((ActionModel) -> Void)?
+
     var body: some View {
         if actionModel.actionType == .script {
             ScriptView(action: $actionModel, onSave: onSave, onCancel: onCancel)
@@ -277,22 +296,22 @@ extension ActionModel {
             .script,
             name: "Script \(Int(CACurrentMediaTime()))",
             script: """
-            #!/bin/bash
-            export DIR="$1"
-            osascript -l JavaScript <<EOD
-            var app = Application.currentApplication()
-            app.includeStandardAdditions = true
-            // ObjC.import('Foundation')
+                #!/bin/bash
+                export DIR="$1"
+                osascript -l JavaScript <<EOD
+                var app = Application.currentApplication()
+                app.includeStandardAdditions = true
+                // ObjC.import('Foundation')
 
-            var iTerm = Application('iTerm')
-            iTerm.activate()
-            iTerm.createWindowWithDefaultProfile()
-            var session = iTerm.currentWindow().currentSession()
-            var dir = app.systemAttribute('DIR')
-            var cmd = "cd \\"" + dir + "\\";clear"
-            session.write({'text': cmd})
-            EOD
-            """
+                var iTerm = Application('iTerm')
+                iTerm.activate()
+                iTerm.createWindowWithDefaultProfile()
+                var session = iTerm.currentWindow().currentSession()
+                var dir = app.systemAttribute('DIR')
+                var cmd = "cd \\"" + dir + "\\";clear"
+                session.write({'text': cmd})
+                EOD
+                """
         )
     }
 }

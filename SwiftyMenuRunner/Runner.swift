@@ -6,9 +6,9 @@
 //  Copyright © 2021 lex.sh. All rights reserved.
 //
 
-import SwiftUI
 import Cocoa
 import OSLog
+import SwiftUI
 
 @main
 struct Runner: App {
@@ -56,7 +56,7 @@ struct Runner: App {
             else {
                 return
             }
-            let items = queries.filter({ $0.name == "item" }).compactMap(\.value)
+            let items = queries.filter { $0.name == "item" }.compactMap(\.value)
             let hidesOthers = queries.first(where: { $0.name == "hidesOthers" })?.value == "true"
 
             runApp(application, items: items, hidesOthers: hidesOthers)
