@@ -58,7 +58,7 @@ class SwiftyMenuSync: FIFinderSync {
     }
 
     override var toolbarItemImage: NSImage {
-        let image = NSImage(named: "SwiftyMenuIcon")!
+        let image = NSImage.swiftyMenuIcon
         image.isTemplate = true
         return image
     }
@@ -76,7 +76,7 @@ class SwiftyMenuSync: FIFinderSync {
         } else {
             if D.collapseContextMenu {
                 let item = NSMenuItem(title: "SwiftyMenu", action: nil, keyEquivalent: "")
-                item.image = NSImage(named: "MenuIcon")
+                item.image = NSImage.menuIcon
 
                 let submenu = NSMenu()
                 item.submenu = submenu

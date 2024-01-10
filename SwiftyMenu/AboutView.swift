@@ -16,7 +16,7 @@ struct AboutView: View {
         VStack(alignment: .center, spacing: 10) {
             Spacer()
 
-            Image(nsImage: NSImage(named: "AppIcon")!)
+            Image(nsImage: NSImage(named: NSImage.applicationIconName)!)
                 .resizable()
                 .frame(width: 64, height: 64)
                 .shadow(

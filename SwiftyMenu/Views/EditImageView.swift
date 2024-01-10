@@ -69,6 +69,6 @@ struct EditImageView: View {
 
 struct EditImageView_Previews: PreviewProvider {
     static var previews: some View {
-        EditImageView(nsImage: NSImage(named: "AppIcon")!, onImageUpdate: nil)
+        EditImageView(nsImage: NSImage(named: NSImage.applicationIconName)!, onImageUpdate: nil)
     }
 }

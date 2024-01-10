@@ -105,7 +105,7 @@ extension SwiftyMenuSync {
             action: #selector(addFolder),
             keyEquivalent: ""
         )
-        item.image = NSImage(named: "AddFolderIcon")
+        item.image = NSImage.addFolderIcon
         return item
     }
 
@@ -115,7 +115,7 @@ extension SwiftyMenuSync {
             action: #selector(presentConfig),
             keyEquivalent: ""
         )
-        item.image = NSImage(named: "MenuIcon")
+        item.image = NSImage.menuIcon
         return item
     }
 

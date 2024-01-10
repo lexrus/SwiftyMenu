@@ -88,15 +88,14 @@ extension NSImage {
 
 extension ActionModel {
     public var nsImage: NSImage {
-        if let icon = icon {
-            return NSImage(data: icon)!
+        if let icon {
+            NSImage(data: icon)!
         } else if let applicationPath = applicationPath, !applicationPath.isEmpty {
-            return NSWorkspace.shared.icon(forFile: applicationPath)
+            NSWorkspace.shared.icon(forFile: applicationPath)
+        } else if actionType == .script {
+            NSImage(named: "TerminalIcon")!
         } else {
-            if actionType == .script {
-                return NSImage(named: "TerminalIcon")!
-            }
-            return NSImage(named: "AppIcon")!
+            NSImage(named: NSImage.applicationIconName)!
         }
     }
 }

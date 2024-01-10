@@ -23,7 +23,7 @@ struct EnableView: View {
         VStack(alignment: .center, spacing: 20) {
             if isExtensionEnabled {
                 if currentSlide == 0 {
-                    Image("FinderToolbarCustomize").resizable().scaledToFit()
+                    Image(.finderToolbarCustomize).resizable().scaledToFit()
                         .transition(.opacity).onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                                 withAnimation {
@@ -32,7 +32,7 @@ struct EnableView: View {
                             }
                         }
                 } else {
-                    Image("FinderButtonDemo").resizable().scaledToFit()
+                    Image(.finderButtonDemo).resizable().scaledToFit()
                         .transition(.opacity).onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                                 withAnimation {
@@ -42,10 +42,10 @@ struct EnableView: View {
                         }
                 }
             } else {
-                Image("ExtensionEnabledScreenshot").resizable().scaledToFit()
+                Image(.extensionEnabledScreenshot).resizable().scaledToFit()
             }
 
-            VStack(alignment: .center, spacing: 10) {
+            VStack(alignment: .center, spacing: 20) {
                 if isExtensionEnabled {
                     Text("extension_enabled_message")
                         .multilineTextAlignment(.center)
@@ -63,7 +63,6 @@ struct EnableView: View {
                     .background(Color(.selectedControlColor))
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .shadow(color: .blue.opacity(0.3), radius: 5, x: 0, y: 0)
-
                     .buttonStyle(PlainButtonStyle())
                     .font(.system(size: 16, weight: .regular, design: .rounded))
                 }

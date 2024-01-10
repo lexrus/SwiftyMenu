@@ -235,9 +235,8 @@ struct ActionsView: View {
     private func addCopyPath() {
         let action = ActionModel(applicationPath: "smart:CopyPath")
         action.name = String(localized: "copy_path_action")
-        let icon = NSImage(named: "SmartActionIcon")!
 
-        action.icon = icon.tiffRepresentation
+        action.icon = NSImage.smartActionIcon.tiffRepresentation
         actions.insert(action, at: 0)
 
         save()
