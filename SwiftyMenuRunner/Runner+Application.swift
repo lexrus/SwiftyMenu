@@ -3,7 +3,7 @@
 //  SwiftyMenuRunner
 //
 //  Created by Lex on 5/18/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import AppKit

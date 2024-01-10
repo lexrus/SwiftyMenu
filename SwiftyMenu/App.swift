@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by Lex on 4/24/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import OSLog
@@ -23,7 +23,7 @@ struct SwiftMenu: App {
         case actions
         case about
 
-        var title: String {
+        var title: LocalizedStringKey {
             switch self {
             case .enable: return "Enable"
             case .folders: return "Folders"
@@ -57,9 +57,8 @@ struct SwiftMenu: App {
                 ZStack {
                     TabItems(rawValue: selectedIndex)?.detailView
                 }
-                .transition(.slide)
                 .background(Color(.controlBackgroundColor))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(maxWidth: .greatestFiniteMagnitude, maxHeight: .greatestFiniteMagnitude)
             }
             .toolbar {
                 HStack(alignment: .center, spacing: 15) {
@@ -76,9 +75,8 @@ struct SwiftMenu: App {
                     }
                 }
                 .padding(8)
-                .frame(maxWidth: .infinity)
             }
-            .frame(minWidth: 530, maxWidth: 600, minHeight: 450)
+            .frame(minWidth: 530, maxWidth: .greatestFiniteMagnitude, minHeight: 450)
             .onAppear {
                 restartExtension()
             }
@@ -96,7 +94,7 @@ struct SwiftMenu: App {
                 Button {
                     SwiftyMenuKit.showMainApp()
                 } label: {
-                    Text("Main window")
+                    Text("show_main_window_button")
                 }
                 .keyboardShortcut("n", modifiers: .command)
             }

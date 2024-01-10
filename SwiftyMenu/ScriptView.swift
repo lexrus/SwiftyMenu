@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by iDurian on 2021/4/29.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import SwiftUI
@@ -48,10 +48,9 @@ struct ScriptView: View {
                     Text("script_shell_label")
                         .frame(width: 48, alignment: .trailing)
 
-                    TextField(
-                        "/bin/bash",
-                        text: $action.shell
-                    )
+                    TextField(text: $action.shell) {
+                        Text(verbatim: "/bin/bash")
+                    }
                     .frame(minWidth: 100, idealWidth: 300, maxWidth: .infinity)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 }

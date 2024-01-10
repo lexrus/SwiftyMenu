@@ -3,7 +3,7 @@
 //  SwiftyMenuKit
 //
 //  Created by iDurian on 2021/4/29.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import AppKit

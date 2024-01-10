@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by Lex on 5/22/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import SwiftUI
@@ -65,14 +65,6 @@ extension View {
                 }
                 .zIndex(1)
             }
-        }
-    }
-}
-
-struct HUD_Previews: PreviewProvider {
-    static var previews: some View {
-        HUD {
-            Text("Succeed!")
         }
     }
 }

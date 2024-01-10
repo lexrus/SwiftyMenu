@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by Lex on 4/24/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import SwiftUI
@@ -30,11 +30,7 @@ struct ActionsView: View {
                 HStack(spacing: 0) {
                     Toggle(isOn: $collapseContextMenu) {
                         Text("collapse_context_menu")
-                            .foregroundColor(
-                                collapseContextMenu
-                                    ? Color(.selectedTextColor)
-                                    : Color(.disabledControlTextColor)
-                            )
+                            .foregroundColor(Color(.selectedTextColor))
                             .font(.system(size: 13, weight: .regular, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
@@ -46,11 +42,7 @@ struct ActionsView: View {
                 HStack(spacing: 0) {
                     Toggle(isOn: $showSwiftyButton) {
                         Text("show_swifty_button")
-                            .foregroundColor(
-                                showSwiftyButton
-                                    ? Color(.selectedTextColor)
-                                    : Color(.disabledControlTextColor)
-                            )
+                            .foregroundColor(Color(.selectedTextColor))
                             .font(.system(size: 13, weight: .regular, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
@@ -220,7 +212,7 @@ struct ActionsView: View {
         dialog.canChooseFiles = true
         dialog.allowsMultipleSelection = true
         dialog.directoryURL = URL(fileURLWithPath: "/Applications")
-        dialog.allowedFileTypes = ["app"]
+        dialog.allowedContentTypes = [.application]
 
         if dialog.runModal() == NSApplication.ModalResponse.OK {
             dialog.urls.forEach { addApplicationAction($0.path) }
@@ -242,7 +234,7 @@ struct ActionsView: View {
 
     private func addCopyPath() {
         let action = ActionModel(applicationPath: "smart:CopyPath")
-        action.name = NSLocalizedString("Copy Path", comment: "")
+        action.name = String(localized: "copy_path_action")
         let icon = NSImage(named: "SmartActionIcon")!
 
         action.icon = icon.tiffRepresentation

@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by Lex on 4/24/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct TabButton: View {
 
     @State
-    var title = ""
+    var title: LocalizedStringKey
 
     @State
     var iconName = ""
@@ -33,7 +33,7 @@ struct TabButton: View {
                     .frame(maxWidth: 30, maxHeight: 30)
                     .scaleEffect(hovering ? 0.9 : 1)
                     .transition(.scale)
-                Text(LocalizedStringKey(title))
+                Text(title)
             }
             .padding(8)
             .frame(minWidth: 60, minHeight: 60)

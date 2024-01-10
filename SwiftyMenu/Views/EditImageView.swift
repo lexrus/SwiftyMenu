@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by iDurian on 2021/5/12.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import Foundation

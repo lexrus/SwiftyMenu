@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by Lex on 4/26/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import OSLog
@@ -19,7 +19,7 @@ struct FoldersView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("folders_title")
+            Text("folders_view_title")
 
             List {
                 ForEach(0..<folders.count, id: \.self) { index in

@@ -3,7 +3,7 @@
 //  SwiftyMenu
 //
 //  Created by Lex on 4/24/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import SwiftUI
@@ -26,7 +26,7 @@ struct AboutView: View {
                     y: 5
                 )
 
-            Text("SwiftyMenu")
+            Text(verbatim: "SwiftyMenu")
                 .font(.system(size: 20, weight: .medium, design: .rounded))
             Text(bundleVersion).font(.body)
 
@@ -40,12 +40,12 @@ struct AboutView: View {
             Button {
                 openURL(URL(string: "https://lex.sh/swiftymenu/privacypolicy")!)
             } label: {
-                Text("Privacy Policy")
+                Text("privacy_policy")
             }
 
             Spacer()
 
-            Text("© 2021 Lex.sh")
+            Text("copyright_footnote")
                 .font(.footnote)
                 .foregroundColor(.secondary)
         }

@@ -3,7 +3,7 @@
 //  SwiftyMenuSync
 //
 //  Created by Lex on 5/22/21.
-//  Copyright © 2021 lex.sh. All rights reserved.
+//  Copyright © 2024 lex.sh. All rights reserved.
 //
 
 import Cocoa
