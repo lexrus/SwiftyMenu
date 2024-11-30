@@ -13,9 +13,7 @@ import OSLog
 extension SwiftyMenuSync {
 
     func run(scriptURL: URL, shell: String = "/bin/sh", arguments: [String] = []) {
-        guard let runnerURL = SwiftyMenuKit.runnerURL else {
-            return
-        }
+        let runnerURL = SwiftyMenuScript.runner.scriptURL
 
         let arguments = [
             shell,

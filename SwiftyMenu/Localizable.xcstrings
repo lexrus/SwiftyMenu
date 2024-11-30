@@ -226,6 +226,7 @@
       }
     },
     "Buttons" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -287,6 +288,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "摺疊右鍵菜單"
+          }
+        }
+      }
+    },
+    "copied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copied into clipboard"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制成功"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "複製成功"
           }
         }
       }
@@ -539,6 +563,7 @@
       }
     },
     "Install" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -559,6 +584,9 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
     },
     "privacy_policy" : {
       "comment" : "About View",
@@ -778,6 +806,53 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "為了能運行你的自定義腳本，我們需要在 Application Scripts 目錄安裝一個輔助腳本。"
+          }
+        }
+      }
+    },
+    "sequoia_enable_button" : {
+      "comment" : "Enable button for Sequoia",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enable SwiftyMenu Automatically"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自动启用 SwiftyMenu"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動啓用 SwiftyMenu"
+          }
+        }
+      }
+    },
+    "sequoia_enable_message" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To enable SwiftyMenu, you need to execute the above command in Terminal. You can also use the following auto-enable button, which will automatically enable it after authorizing the script directory."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 SwiftyMenu 需要执行以上指令。您也可以使用自动启用按钮，授权脚本目录后自动启用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啓用 SwiftyMenu 需要執行以上指令。您也可以使用自動啓用按鈕，授權腳本目錄後自動啓用。"
           }
         }
       }

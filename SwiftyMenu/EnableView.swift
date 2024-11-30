@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import OSLog
 
 struct EnableView: View {
 
@@ -42,7 +43,11 @@ struct EnableView: View {
                         }
                 }
             } else {
-                Image(.extensionEnabledScreenshot).resizable().scaledToFit()
+                if #available(macOS 15.0, *) {
+                    
+                } else {
+                    Image(.extensionEnabledScreenshot).resizable().scaledToFit()
+                }
             }
 
             VStack(alignment: .center, spacing: 20) {
@@ -53,18 +58,24 @@ struct EnableView: View {
                     Text("finder_button_introduction").font(.body)
                         .multilineTextAlignment(.center)
                 } else {
-                    Text("system_preferences_introduction")
-                    Button {
-                        SwiftyMenuKit.showExtensionPreferences()
-                    } label: {
-                        Text("system_preferences_button")
+                    if #available(macOS 15.0, *) {
+                        Button {
+                            NSPasteboard.general.setString("pluginkit -e \"use\" -i sh.lex.SwiftyMenu.Sync", forType: .string)
+                            hud.show("copied")
+                        } label: {
+                            Text(verbatim: "pluginkit -e \"use\" -i sh.lex.SwiftyMenu.Sync")
+                        }
+                        .buttonStyle(.plain)
+                        .padding(5)
+                        .border(.secondary, width: 1)
+
+
+                        Text("sequoia_enable_message")
+                        sequoiaEnableButton()
+                    } else {
+                        Text("system_preferences_introduction")
+                        systemPreferenceButton()
                     }
-                    .padding(.init(top: 4, leading: 10, bottom: 5, trailing: 10))
-                    .background(Color(.selectedControlColor))
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .shadow(color: .blue.opacity(0.3), radius: 5, x: 0, y: 0)
-                    .buttonStyle(PlainButtonStyle())
-                    .font(.system(size: 16, weight: .regular, design: .rounded))
                 }
             }
 
@@ -77,6 +88,67 @@ struct EnableView: View {
         }
         .onReceive(didBecomeActive) { _ in
             isExtensionEnabled = SwiftyMenuKit.checkExtensionEnabled()
+        }
+    }
+
+    private func systemPreferenceButton() -> some View {
+        Button {
+            SwiftyMenuKit.showExtensionPreferences()
+        } label: {
+            Text("system_preferences_button")
+        }
+        .padding(.init(top: 4, leading: 10, bottom: 5, trailing: 10))
+        .background(Color(.selectedControlColor))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .shadow(color: .blue.opacity(0.3), radius: 5, x: 0, y: 0)
+        .buttonStyle(PlainButtonStyle())
+        .font(.system(size: 16, weight: .regular, design: .rounded))
+    }
+
+    private func sequoiaEnableButton() -> some View {
+        Button {
+            installEnableScript()
+        } label: {
+            Text("sequoia_enable_button")
+        }
+        .padding(.init(top: 8, leading: 15, bottom: 8, trailing: 15))
+        .background(Color(.selectedControlColor))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+        .shadow(color: .blue.opacity(0.3), radius: 5, x: 0, y: 0)
+        .buttonStyle(PlainButtonStyle())
+        .font(.system(size: 18, weight: .regular, design: .rounded))
+    }
+
+    private func installEnableScript() {
+        SwiftyMenuKit.installScript(script: .enableExtension) { installed in
+            if installed {
+                runEnableScript()
+
+                isExtensionEnabled = SwiftyMenuKit.checkExtensionEnabled()
+            } else {
+                hud.show("hud_script_installation_failed")
+            }
+        }
+    }
+
+    private func runEnableScript() {
+        let enableURL = SwiftyMenuScript.enableExtension.scriptURL
+
+        let arguments = [
+            "/bin/sh",
+            enableURL.path,
+            "",
+        ]
+
+        do {
+            let task = try NSUserUnixTask(url: enableURL)
+
+            task.execute(withArguments: arguments) { error in
+                error.map { os_log(.debug, "%@", $0.localizedDescription) }
+                os_log(.debug, "complete")
+            }
+        } catch {
+            os_log(.debug, "%@", error.localizedDescription)
         }
     }
 

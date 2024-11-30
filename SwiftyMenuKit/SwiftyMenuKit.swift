@@ -18,7 +18,7 @@ public enum RunnerActions: String {
 
 public enum SwiftyMenuKit {
 
-    private static var mainScriptsDirectory: URL = {
+    fileprivate static var mainScriptsDirectory: URL = {
         let manager = FileManager.default
         var scriptsFolder: URL!
 
@@ -39,35 +39,25 @@ public enum SwiftyMenuKit {
         return scriptsFolder
     }()
 
-    /// URL of the script folder
-    /// - Returns: ~/Library/Application Scripts/{bundle_id}/
-    public static var scriptsDirectory: URL? {
-        mainScriptsDirectory
-            .deletingLastPathComponent()
-            .appendingPathComponent("sh.lex.SwiftyMenu.Sync")
-    }
+//    public static var runnerURL: URL? {
+//        scriptsDirectory?.appendingPathComponent("runner.sh")
+//    }
 
-    public static var runnerURL: URL? {
-        scriptsDirectory?.appendingPathComponent("runner.sh")
-    }
-
-    public static func installRunner(completionHandler: @escaping (Bool) -> Void) {
-        guard let scriptsDirectory = scriptsDirectory else {
-            return
-        }
-
+    public static func installScript(
+        script: SwiftyMenuScript,
+        completionHandler: @escaping (Bool) -> Void
+    ) {
         let panel = NSOpenPanel()
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = true
         panel.canCreateDirectories = false
         panel.canChooseFiles = false
-        panel.directoryURL = scriptsDirectory
+        panel.directoryURL = script.dir
         panel.begin { response in
             guard
                 response == .OK,
                 let url = panel.url,
-                scriptsDirectory.path.hasPrefix(url.path),
-                let runnerURL = runnerURL
+                script.dir.path.hasPrefix(url.path)
             else {
                 completionHandler(false)
                 return
@@ -76,9 +66,9 @@ public enum SwiftyMenuKit {
             // Create the subfolder
 
             do {
-                if !FileManager.default.fileExists(atPath: scriptsDirectory.path) {
+                if !FileManager.default.fileExists(atPath: script.dir.path) {
                     try FileManager.default.createDirectory(
-                        at: scriptsDirectory,
+                        at: script.dir,
                         withIntermediateDirectories: false,
                         attributes: nil
                     )
@@ -89,15 +79,19 @@ public enum SwiftyMenuKit {
                 return
             }
 
-            let data = runnerContent.data(using: .utf8)
+            let data = script.rawValue.data(using: .utf8)
 
-            // It requires 0700 to execute
-            if FileManager.default.createFile(atPath: runnerURL.path, contents: data, attributes: [
-                FileAttributeKey.posixPermissions: 0o755,
-            ]) {
-                completionHandler(true)
+            if !FileManager.default.fileExists(atPath: script.scriptURL.path) {
+                // It requires 0700 to execute
+                if FileManager.default.createFile(atPath: script.scriptURL.path, contents: data, attributes: [
+                    FileAttributeKey.posixPermissions: 0o755,
+                ]) {
+                    completionHandler(true)
+                } else {
+                    completionHandler(false)
+                }
             } else {
-                completionHandler(false)
+                completionHandler(true)
             }
         }
     }
@@ -110,28 +104,24 @@ public enum SwiftyMenuKit {
         FIFinderSyncController.showExtensionManagementInterface()
     }
 
-    public static func checkRunnerScriptInstalled() -> Bool {
-        guard let runnerURL = runnerURL else {
-            return false
-        }
-
+    public static func checkScriptInstallation(script: SwiftyMenuScript) -> Bool {
         do {
-            if FileManager.default.fileExists(atPath: runnerURL.path) {
-                if try FileManager.default.attributesOfItem(atPath: runnerURL.path)
+            if FileManager.default.fileExists(atPath: script.scriptURL.path) {
+                if try FileManager.default.attributesOfItem(atPath: script.scriptURL.path)
                     .contains(where: {
                         $0.key == .posixPermissions && ($0.value as? Int) ?? 0 > 0o700
                     })
                 {
                     return true
                 } else {
-                    try FileManager.default.removeItem(at: runnerURL)
+                    try FileManager.default.removeItem(at: script.scriptURL)
                 }
             }
         } catch {
             os_log(
                 .debug,
                 "failed to remove runner: %@ %@",
-                runnerURL.path,
+                script.scriptURL.path,
                 error.localizedDescription
             )
         }
@@ -242,11 +232,47 @@ extension Bundle {
 
 }
 
-private let runnerContent =
-    """
-    #!/bin/sh
-    action="$1"
-    shift 1
-    "$action" "$@"
-    echo "$action\n$@" >/tmp/swiftymenu.log
-    """
+public enum SwiftyMenuScript: String {
+
+    case runner = """
+        #!/bin/sh
+        action="$1"
+        shift 1
+        "$action" "$@"
+        echo "$action\n$@" >/tmp/swiftymenu.log
+        """
+
+    /// Workaround for system Finder Sync UI
+    /// @seealso https://github.com/aonez/Keka/issues/1464
+    /// @seealso https://forums.developer.apple.com/forums/thread/756711?answerId=812519022#812519022
+    case enableExtension =
+        """
+        #!/bin/sh
+        pluginkit -e "use" -i sh.lex.SwiftyMenu.Sync
+        # pkill "SwiftyMenu"
+        # open -a "sh.lex.SwiftyMenu"
+        """
+
+    var scriptURL: URL {
+        switch self {
+        case .runner:
+            dir.appendingPathComponent("runner.sh")
+        case .enableExtension:
+            dir.appendingPathComponent("enable.sh")
+        }
+    }
+
+    var dir: URL {
+        switch self {
+        case .runner:
+            SwiftyMenuKit.mainScriptsDirectory
+                    .deletingLastPathComponent()
+                    .appendingPathComponent("sh.lex.SwiftyMenu.Sync")
+
+        case .enableExtension:
+            SwiftyMenuKit.mainScriptsDirectory
+                    .deletingLastPathComponent()
+                    .appendingPathComponent("sh.lex.SwiftyMenu")
+        }
+    }
+}

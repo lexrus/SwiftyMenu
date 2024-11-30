@@ -152,10 +152,9 @@ struct ActionsView: View {
     }
 
     private func promptScriptsFolderIfNeeded() {
-        guard let runnerURL = SwiftyMenuKit.runnerURL else {
-            return
-        }
-        if !SwiftyMenuKit.checkRunnerScriptInstalled() {
+        let runnerURL = SwiftyMenuScript.runner.scriptURL
+
+        if !SwiftyMenuKit.checkScriptInstallation(script: .runner) {
             let alert = NSAlert()
             alert.informativeText = runnerURL.path
             alert.messageText = NSLocalizedString("scripts_permission_message", comment: "")
@@ -183,7 +182,7 @@ struct ActionsView: View {
     }
 
     private func installRunner() {
-        SwiftyMenuKit.installRunner { installed in
+        SwiftyMenuKit.installScript(script: .runner) { installed in
             if installed {
                 showScriptEditor()
             } else {
