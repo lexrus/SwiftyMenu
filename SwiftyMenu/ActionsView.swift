@@ -275,10 +275,8 @@ struct SheetView: View {
     }
 }
 
-struct ActionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ActionsView()
-    }
+#Preview {
+    ActionsView()
 }
 
 extension ActionModel {

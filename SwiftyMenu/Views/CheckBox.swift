@@ -48,11 +48,9 @@ struct CheckBox: View {
     }
 }
 
-struct CheckBox_Previews: PreviewProvider {
-    static var previews: some View {
-        CheckBox(isChecked: .constant(true)) { _ in
-
-        }
+#Preview {
+    CheckBox(isChecked: .constant(true)) { _ in
+        
     }
 }
 

@@ -82,8 +82,6 @@ struct EnableView: View {
 
 }
 
-struct InstallView_Previews: PreviewProvider {
-    static var previews: some View {
-        EnableView()
-    }
+#Preview {
+    EnableView()
 }

@@ -38,7 +38,7 @@ extension SwiftyMenuSync {
     func runApplication(_ applicationPath: String, hidesOthers: Bool = false) {
         var comps = URLComponents()
         comps.scheme = "swiftymenurunner"
-        comps.host = "runApp"
+        comps.host = RunnerActions.runApp.rawValue
         comps.queryItems = [
             .init(name: "path", value: applicationPath),
             .init(name: "hidesOthers", value: hidesOthers ? "true" : "false"),

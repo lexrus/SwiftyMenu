@@ -72,8 +72,6 @@ struct ActionCell: View {
     }
 }
 
-struct ActionCell_Previews: PreviewProvider {
-    static var previews: some View {
-        ActionsView()
-    }
+#Preview {
+    ActionsView()
 }

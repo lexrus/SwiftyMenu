@@ -108,7 +108,7 @@ struct SwiftMenu: App {
             return
         }
 
-        if comps.host == "addFolder" {
+        if comps.host == RunnerActions.addFolder.rawValue {
             if let folder = comps.queryItems?.first(where: { $0.name == "folder" })?.value {
                 selectedIndex = TabItems.folders.rawValue
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {

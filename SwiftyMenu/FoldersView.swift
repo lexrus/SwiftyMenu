@@ -72,8 +72,6 @@ struct FoldersView: View {
     }
 }
 
-struct FoldersView_Previews: PreviewProvider {
-    static var previews: some View {
-        FoldersView()
-    }
+#Preview {
+    FoldersView()
 }

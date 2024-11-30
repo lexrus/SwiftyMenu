@@ -11,6 +11,11 @@ import FinderSync
 import Foundation
 import OSLog
 
+public enum RunnerActions: String {
+    case addFolder
+    case runApp
+}
+
 public enum SwiftyMenuKit {
 
     private static var mainScriptsDirectory: URL = {
@@ -137,7 +142,7 @@ public enum SwiftyMenuKit {
     public static func openFolderPanel(folderURL: URL? = nil) {
         var comps = URLComponents()
         comps.scheme = "swiftymenurunner"
-        comps.host = "addFolder"
+        comps.host = RunnerActions.addFolder.rawValue
 
         if let folderURL = folderURL {
             comps.queryItems = [

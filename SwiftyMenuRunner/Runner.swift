@@ -32,13 +32,14 @@ struct Runner: App {
     private func handleOpenURL(_ url: URL) {
         guard
             let comps = URLComponents(url: url, resolvingAgainstBaseURL: false),
-            let host = comps.host
+            let host = comps.host,
+            let action = RunnerActions(rawValue: host)
         else {
             return
         }
 
-        switch host {
-        case "addFolder":
+        switch action {
+        case .addFolder:
             let folder = comps.queryItems?
                 .first(where: { $0.name == "folder" })?
                 .value
@@ -49,7 +50,7 @@ struct Runner: App {
             }
             return
 
-        case "runApp":
+        case .runApp:
             guard
                 let queries = comps.queryItems,
                 let application = queries.first(where: { $0.name == "path" })?.value
@@ -60,9 +61,6 @@ struct Runner: App {
             let hidesOthers = queries.first(where: { $0.name == "hidesOthers" })?.value == "true"
 
             runApp(application, items: items, hidesOthers: hidesOthers)
-
-        default:
-            break
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {

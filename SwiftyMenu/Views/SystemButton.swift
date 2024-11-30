@@ -36,10 +36,8 @@ struct SystemButton: View {
     }
 }
 
-struct SystemButton_Previews: PreviewProvider {
-    static var previews: some View {
-        SystemButton(imageName: "trash") {}
-    }
+#Preview {
+    SystemButton(imageName: "trash") {}
 }
 
 struct TrashButton_LibraryContent: LibraryContentProvider {

@@ -93,9 +93,13 @@ struct ApplicationView: View {
                     onSave?(action)
                     presentationMode.wrappedValue.dismiss()
                 } label: {
-                    Text("application_save_button")
-                        .font(.system(size: 15, weight: .medium, design: .rounded))
-                        .frame(minWidth: 60)
+                    HStack {
+                        Image(systemName: "square.and.arrow.down")
+                            .font(.system(size: 15))
+                        Text("application_save_button")
+                            .font(.system(size: 15, weight: .medium, design: .rounded))
+                    }
+                    .frame(minWidth: 60)
                 }
                 .controlSize(.large)
 

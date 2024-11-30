@@ -68,8 +68,6 @@ struct FolderCell: View {
     }
 }
 
-struct FolderCell_Previews: PreviewProvider {
-    static var previews: some View {
-        FoldersView()
-    }
+#Preview {
+    FoldersView()
 }
