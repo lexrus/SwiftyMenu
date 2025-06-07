@@ -22,11 +22,14 @@ struct Runner: App {
     }
 
     var body: some Scene {
+        // This is an invisible window that listens for URL schemes.
         WindowGroup {
-            ZStack {}
+            Group {}
                 .onOpenURL(perform: handleOpenURL)
                 .frame(maxWidth: 0, maxHeight: 0)
         }
+        .defaultSize(width: 0, height: 0)
+        .defaultPosition(.topTrailing)
     }
 
     private func handleOpenURL(_ url: URL) {
