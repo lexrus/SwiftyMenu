@@ -43,6 +43,7 @@
 		D7BF8AC12657F09A0055BA3C /* ActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A38A64263C54ED00838B73 /* ActionModel.swift */; };
 		D7CFE1F72644319C0090A808 /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CFE1F62644319C0090A808 /* ActionCell.swift */; };
 		D7E088CB2572ABAC000C37AA /* SwiftyMenuSyncMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E088CA2572ABAC000C37AA /* SwiftyMenuSyncMenuItems.swift */; };
+		D7F46CA22E465395009EEA49 /* AppAboutView in Frameworks */ = {isa = PBXBuildFile; productRef = D7F46CA12E465395009EEA49 /* AppAboutView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F46CA22E465395009EEA49 /* AppAboutView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +311,7 @@
 			);
 			name = SwiftyMenu;
 			packageProductDependencies = (
+				D7F46CA12E465395009EEA49 /* AppAboutView */,
 			);
 			productName = SwiftyFinder;
 			productReference = D72F849625278634003F3CB3 /* SwiftyMenu.app */;
@@ -365,6 +368,7 @@
 			);
 			mainGroup = D72F848D25278634003F3CB3;
 			packageReferences = (
+				D7F46CA02E465395009EEA49 /* XCRemoteSwiftPackageReference "AppAboutView" */,
 			);
 			productRefGroup = D72F849725278634003F3CB3 /* Products */;
 			projectDirPath = "";
@@ -610,7 +614,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 5SKD83S59G;
@@ -625,8 +629,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -644,7 +648,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 5SKD83S59G;
@@ -659,8 +663,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -676,7 +680,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5SKD83S59G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -690,8 +694,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -708,7 +712,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5SKD83S59G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -722,8 +726,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -764,6 +768,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7F46CA02E465395009EEA49 /* XCRemoteSwiftPackageReference "AppAboutView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lexrus/AppAboutView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7F46CA12E465395009EEA49 /* AppAboutView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7F46CA02E465395009EEA49 /* XCRemoteSwiftPackageReference "AppAboutView" */;
+			productName = AppAboutView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D72F848E25278634003F3CB3 /* Project object */;
 }

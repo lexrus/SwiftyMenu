@@ -57,7 +57,7 @@ struct SwiftMenu: App {
                 ZStack {
                     TabItems(rawValue: selectedIndex)?.detailView
                 }
-                .background(Color(.controlBackgroundColor))
+                .background(Color(.windowBackgroundColor))
                 .frame(maxWidth: .greatestFiniteMagnitude, maxHeight: .greatestFiniteMagnitude)
             }
             .toolbar {

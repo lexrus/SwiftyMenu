@@ -225,29 +225,6 @@
         }
       }
     },
-    "Buttons" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buttons"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "按钮"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "按鈕"
-          }
-        }
-      }
-    },
     "chose_application_panel_title" : {
       "localizations" : {
         "en" : {
@@ -334,28 +311,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "複製路徑"
-          }
-        }
-      }
-    },
-    "copyright_footnote" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "© 2024 Lex.sh"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "© 2024 Lex.sh"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "© 2024 Lex.sh"
           }
         }
       }
@@ -449,28 +404,6 @@
         }
       }
     },
-    "Feedback: %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Feedback %@"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "意见反馈 %@"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "意見反饋 %@"
-          }
-        }
-      }
-    },
     "finder_button_introduction" : {
       "localizations" : {
         "en" : {
@@ -558,55 +491,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "安裝輔助腳本失敗"
-          }
-        }
-      }
-    },
-    "Install" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Install"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安装"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安裝"
-          }
-        }
-      }
-    },
-    "Key" : {
-      "extractionState" : "manual"
-    },
-    "privacy_policy" : {
-      "comment" : "About View",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Privacy Policy"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "隐私协议"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "隱私協議"
           }
         }
       }

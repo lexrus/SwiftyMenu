@@ -1,0 +1,15 @@
+{
+  "originHash" : "e85c62745299ba7316418468340a580dbd4927cca846d41507583a2f41df7305",
+  "pins" : [
+    {
+      "identity" : "appaboutview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lexrus/AppAboutView",
+      "state" : {
+        "revision" : "a50a8d3ba2746278301fa1dba918c38822b41fc9",
+        "version" : "0.0.4"
+      }
+    }
+  ],
+  "version" : 3
+}
