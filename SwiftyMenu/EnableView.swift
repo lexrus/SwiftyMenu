@@ -43,8 +43,10 @@ struct EnableView: View {
                         }
                 }
             } else {
-                if #available(macOS 15.0, *) {
-                    
+                if #available(macOS 15.2, *) {
+                    Image(.extensionEnabledScreenshot152).resizable().scaledToFit()
+                } else if #available(macOS 15.0, *) {
+
                 } else {
                     Image(.extensionEnabledScreenshot).resizable().scaledToFit()
                 }
@@ -58,7 +60,10 @@ struct EnableView: View {
                     Text("finder_button_introduction").font(.body)
                         .multilineTextAlignment(.center)
                 } else {
-                    if #available(macOS 15.0, *) {
+                    if #available(macOS 15.2, *) {
+                        Text("system_preferences_introduction_15_2")
+                        systemPreferenceButton()
+                    } else if #available(macOS 15.0, *) {
                         Button {
                             NSPasteboard.general.setString("pluginkit -e \"use\" -i sh.lex.SwiftyMenu.Sync", forType: .string)
                             hud.show("copied")

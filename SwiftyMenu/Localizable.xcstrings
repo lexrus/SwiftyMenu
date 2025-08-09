@@ -360,52 +360,6 @@
         }
       }
     },
-    "feedback_message" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Please feel free to say anything."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "欢迎提出任何意见或建议。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "歡迎提出任何意見或建議。"
-          }
-        }
-      }
-    },
-    "feedback_subject" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SwiftyMenu Feedback"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SwiftyMenu 意见反馈"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SwiftyMenu 意見反饋"
-          }
-        }
-      }
-    },
     "finder_button_introduction" : {
       "localizations" : {
         "en" : {
@@ -815,7 +769,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open System Preferences"
+            "value" : "Open System Settings"
           }
         },
         "zh-Hans" : {
@@ -827,7 +781,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打開系統設置"
+            "value" : "打開系統設定"
           }
         }
       }
@@ -837,7 +791,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Please enable SwiftyMenu in\nSystem Preferences → Extensions → Finder Extensions"
+            "value" : "Please enable SwiftyMenu in\nSystem Preferences → Extensions → File Providers"
           }
         },
         "zh-Hans" : {
@@ -850,6 +804,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請先啓用 SwiftyMenu\n\n系統設置 → 擴展 → Finder 擴展"
+          }
+        }
+      }
+    },
+    "system_preferences_introduction_15_2" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enable SwiftyMenu in\nSystem Settings → General → Finder Extensions"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请先启用 SwiftyMenu\n\n系统设置 → 通用 → 登录项与扩展 → 文件提供程序"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請先啓用 SwiftyMenu\n\n系統設定 → 一般 → 登入項目與延伸功能 → 檔案供應商"
           }
         }
       }
