@@ -62,7 +62,7 @@ extension SwiftyMenuSync {
                     Self.alert(err.localizedDescription)
                     os_log(.error, "Failed to open runner: %@", err.localizedDescription)
                 } else {
-                    app?.activate(options: .activateIgnoringOtherApps)
+                    app?.activate(options: [])
                     os_log(.debug, "Open runner succeed.")
                 }
             }

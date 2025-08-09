@@ -157,7 +157,7 @@ public enum SwiftyMenuKit {
                 if let err = err {
                     os_log(.error, "Failed to open runner: %@", err.localizedDescription)
                 } else {
-                    app?.activate(options: .activateIgnoringOtherApps)
+                    app?.activate(options: [])
                     os_log(.debug, "Open runner succeed.")
                 }
             }

@@ -1,6 +1,6 @@
 # SwiftyMenu
 
-[![Swift](https://img.shields.io/badge/Swift-6.0-ED523F.svg?style=flat)](https://swift.org/)
+[![Swift](https://img.shields.io/badge/Swift-5.0-ED523F.svg?style=flat)](https://swift.org/)
 [![SwiftUI](https://img.shields.io/badge/SwiftUI-✓-blue)](https://developer.apple.com/xcode/swiftui/)
 [![AppKit](https://img.shields.io/badge/AppKit-✓-orange)](https://developer.apple.com/xcode/swiftui/)
 [![macOS 14+](https://img.shields.io/badge/macOS-14+-green)](https://www.apple.com/macos/)

@@ -34,8 +34,8 @@ struct ActionsView: View {
                             .font(.system(size: 13, weight: .regular, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
-                    .onChange(of: collapseContextMenu) {
-                        D.collapseContextMenu = $0
+                    .onChange(of: collapseContextMenu) { _, new in
+                        D.collapseContextMenu = new
                     }
                 }
 
@@ -46,8 +46,8 @@ struct ActionsView: View {
                             .font(.system(size: 13, weight: .regular, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
-                    .onChange(of: showSwiftyButton) {
-                        D.showSwiftyButton = $0
+                    .onChange(of: showSwiftyButton) { _, new in
+                        D.showSwiftyButton = new
                     }
                 }
 

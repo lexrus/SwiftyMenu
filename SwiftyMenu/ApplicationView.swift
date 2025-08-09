@@ -79,8 +79,8 @@ struct ApplicationView: View {
                             .font(.system(size: 13, weight: .medium, design: .rounded))
                     }
                     .toggleStyle(CheckboxToggleStyle())
-                    .onChange(of: isChecked) {
-                        action.hidesOthers = $0
+                    .onChange(of: isChecked) { _, new in
+                        action.hidesOthers = new
                     }
                 }
             }
