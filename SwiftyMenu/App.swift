@@ -41,12 +41,13 @@ struct SwiftMenu: App {
             }
         }
 
-        var detailView: AnyView {
+        @ViewBuilder
+        var detailView: some View {
             switch self {
-            case .enable: return AnyView(EnableView())
-            case .folders: return AnyView(FoldersView())
-            case .actions: return AnyView(ActionsView())
-            case .about: return AnyView(AboutView())
+            case .enable: EnableView()
+            case .folders: FoldersView()
+            case .actions: ActionsView()
+            case .about: AboutView()
             }
         }
     }

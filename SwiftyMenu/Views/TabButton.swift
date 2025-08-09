@@ -13,7 +13,6 @@ struct TabButton: View {
     @State
     var title: LocalizedStringKey
 
-    @State
     var iconName = ""
 
     var selected = false
@@ -21,7 +20,6 @@ struct TabButton: View {
     @State
     var hovering = false
 
-    @State
     var action: () -> Void
 
     var body: some View {
@@ -42,9 +40,10 @@ struct TabButton: View {
                     ? Color(.selectedControlColor)
                     : (hovering ? Color(.selectedControlColor).opacity(0.2) : Color.clear)
             )
-            .clipShape(RoundedRectangle(cornerRadius: 6))
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .contentShape(Rectangle())
         }
-        .whenHovered { isHovering in
+        .onHover { isHovering in
             withAnimation(.easeOut(duration: 0.15)) {
                 hovering = isHovering
             }

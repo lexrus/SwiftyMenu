@@ -361,6 +361,7 @@
       }
     },
     "feedback_message" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -383,6 +384,7 @@
       }
     },
     "feedback_subject" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
