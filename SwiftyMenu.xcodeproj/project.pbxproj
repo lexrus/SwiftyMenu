@@ -32,7 +32,6 @@
 		D7994FE5264580D40068FDED /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7994FE4264580D40068FDED /* CheckBox.swift */; };
 		D7994FE726458E9B0068FDED /* FolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7994FE626458E9B0068FDED /* FolderCell.swift */; };
 		D7994FE9264592130068FDED /* SystemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7994FE8264592130068FDED /* SystemButton.swift */; };
-		D7994FEB26497D140068FDED /* ReliableHover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7994FEA26497D140068FDED /* ReliableHover.swift */; };
 		D7BF8AB42657F0240055BA3C /* SwiftyMenuKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B6EF12638639D00FAA85C /* SwiftyMenuKit.swift */; };
 		D7BF8AB52657F0240055BA3C /* SwiftyDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B06BC7B263A770500898BA0 /* SwiftyDefaults.swift */; };
 		D7BF8AB62657F0240055BA3C /* FolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA75987263A83C60055903C /* FolderModel.swift */; };
@@ -148,7 +147,6 @@
 		D7994FE4264580D40068FDED /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		D7994FE626458E9B0068FDED /* FolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCell.swift; sourceTree = "<group>"; };
 		D7994FE8264592130068FDED /* SystemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemButton.swift; sourceTree = "<group>"; };
-		D7994FEA26497D140068FDED /* ReliableHover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliableHover.swift; sourceTree = "<group>"; };
 		D7A38A64263C54ED00838B73 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
 		D7CFE1F62644319C0090A808 /* ActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
 		D7E088B12572967F000C37AA /* SwiftyMenuSync.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SwiftyMenuSync.entitlements; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 				D71014AE2642DAA400132B09 /* MacEditorTextView.swift */,
 				D7994FE4264580D40068FDED /* CheckBox.swift */,
 				D7994FE8264592130068FDED /* SystemButton.swift */,
-				D7994FEA26497D140068FDED /* ReliableHover.swift */,
 				D77FA56A2658A621003B2D1A /* HUD.swift */,
 			);
 			path = Views;
@@ -433,7 +430,6 @@
 				D794BDC72634505400D13B2D /* App.swift in Sources */,
 				D7994FE9264592130068FDED /* SystemButton.swift in Sources */,
 				D7994FE726458E9B0068FDED /* FolderCell.swift in Sources */,
-				D7994FEB26497D140068FDED /* ReliableHover.swift in Sources */,
 				D71014AF2642DAA400132B09 /* MacEditorTextView.swift in Sources */,
 				D794BDFA263468FF00D13B2D /* ActionsView.swift in Sources */,
 				D7994FE5264580D40068FDED /* CheckBox.swift in Sources */,

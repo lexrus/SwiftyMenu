@@ -60,7 +60,7 @@ struct FolderCell: View {
             }
         }
         .padding(5)
-        .whenHovered {
+        .onHover {
             hovering = $0
         }
         .background(hovering ? Color(.selectedControlColor).opacity(0.5) : .clear)

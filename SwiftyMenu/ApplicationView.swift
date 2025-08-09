@@ -66,7 +66,7 @@ struct ApplicationView: View {
             .onAppear {
                 name = action.name
             }
-            .whenHovered { isHovering in
+            .onHover { isHovering in
                 withAnimation(.easeOut(duration: 0.2)) {
                     isNameHover = isHovering
                 }

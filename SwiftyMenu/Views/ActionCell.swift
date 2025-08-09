@@ -62,7 +62,7 @@ struct ActionCell: View {
             }
         }
         .padding(5)
-        .whenHovered { isHovering in
+        .onHover { isHovering in
             withAnimation(.easeOut(duration: 0.2)) {
                 hovering = isHovering
             }
