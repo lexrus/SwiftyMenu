@@ -1,0 +1,11 @@
+[tasks.pull-metadata]
+description = "Pull all metadata from App Store for all platforms"
+run = [
+  "fastlane deliver download_metadata -j osx --api_key_path fastlane/keys/app_key.json --sync_screenshots --force"
+]
+
+[tasks.push-metadata]
+description = "Push all metadata to App Store for all platforms"
+run = [
+  "fastlane deliver -j osx --api_key_path fastlane/keys/app_key.json --sync_screenshots --force"
+]
