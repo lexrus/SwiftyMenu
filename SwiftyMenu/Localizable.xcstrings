@@ -1,835 +1,1057 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "About" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "About"
+  "sourceLanguage": "en",
+  "strings": {
+    "About": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "关于"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "關於"
-          }
-        }
-      }
-    },
-    "Actions" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Actions"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "动作"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "動作"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於"
           }
         }
       }
     },
-    "add_application_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Application"
+    "Actions": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actions"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加程序"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "动作"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加程序"
-          }
-        }
-      }
-    },
-    "add_copy_path_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Copy Path"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動作"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加复制路径"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加複製路徑"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actions"
           }
         }
       }
     },
-    "add_folder_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Folder"
+    "add_application_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Application"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加目录"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加程序"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加目錄"
-          }
-        }
-      }
-    },
-    "add_script_button" : {
-      "comment" : "Actions View",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Script"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加程序"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加脚本"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加腳本"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter une application"
           }
         }
       }
     },
-    "application_cancel_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancel"
+    "add_copy_path_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Copy Path"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取消"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加复制路径"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取消"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加複製路徑"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter copier le chemin"
           }
         }
       }
     },
-    "application_hides_others" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hides others while opening"
+    "add_folder_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Folder"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开时隐藏其它应用"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加目录"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打開時隱藏其它應用"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加目錄"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un dossier"
           }
         }
       }
     },
-    "application_name_placeholder" : {
-      "comment" : "Application View",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Application name"
+    "add_script_button": {
+      "comment": "Actions View",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Script"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "应用名称"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加脚本"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "應用名稱"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加腳本"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter un script"
           }
         }
       }
     },
-    "application_save_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save"
+    "application_cancel_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
           }
         }
       }
     },
-    "chose_application_panel_title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose an application"
+    "application_hides_others": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hides others while opening"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "选择一个程序"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开时隐藏其它应用"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "選擇一個程序"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打開時隱藏其它應用"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masquer les autres lors de l'ouverture"
           }
         }
       }
     },
-    "collapse_context_menu" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Collapse context menu"
+    "application_name_placeholder": {
+      "comment": "Application View",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application name"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "折叠右键菜单"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用名称"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "摺疊右鍵菜單"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "應用名稱"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de l'application"
           }
         }
       }
     },
-    "copied" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copied into clipboard"
+    "application_save_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制成功"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "複製成功"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrer"
           }
         }
       }
     },
-    "copy_path_action" : {
-      "comment" : "Smart actions",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy Path"
+    "chose_application_panel_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose an application"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制路径"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择一个程序"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "複製路徑"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇一個程序"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir une application"
           }
         }
       }
     },
-    "Enable" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enable"
+    "collapse_context_menu": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collapse context menu"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "启用"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "折叠右键菜单"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "啓用"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "摺疊右鍵菜單"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réduire le menu contextuel"
           }
         }
       }
     },
-    "extension_enabled_message" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🎉 Hooray! SwiftyMenu is enabled."
+    "copied": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied into clipboard"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🎉 太棒了! SwiftyMenu 已启用。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制成功"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🎉 太棒了! SwiftyMenu 已啓用。"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製成功"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copié dans le presse-papiers"
           }
         }
       }
     },
-    "finder_button_introduction" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Right click on the toolbar of Finder and pull out the SwiftyMenu button from \"Customize Toolbar...\" panel. It's also available in the context menu."
+    "copy_path_action": {
+      "comment": "Smart actions",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy Path"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在 Finder 菜单点击右键，然后选择自义定工具栏，再将 SwiftyMenu 的按钮拖出来。另外，你还可以在右键菜单中使用 SwiftyMenu。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制路径"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在 Finder 菜單點擊右鍵，然後選擇自義定工具欄，再將 SwiftyMenu 的按鈕拖出來。另外，你還可以在右鍵菜單中使用 SwiftyMenu。"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複製路徑"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier le chemin"
           }
         }
       }
     },
-    "Folders" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Folders"
+    "Enable": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "目录"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "目錄"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "啓用"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer"
           }
         }
       }
     },
-    "folders_view_title" : {
-      "comment" : "The title of Folders view",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enable SwiftyMenu for the following folders:"
+    "extension_enabled_message": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Hooray! SwiftyMenu is enabled."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在下列目录中启用 SwiftyMenu："
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 太棒了! SwiftyMenu 已启用。"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在下列目錄中啓用 SwiftyMenu："
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 太棒了! SwiftyMenu 已啓用。"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Hourra ! SwiftyMenu est activé."
           }
         }
       }
     },
-    "hud_script_installation_failed" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to install helper script"
+    "finder_button_introduction": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Right click on the toolbar of Finder and pull out the SwiftyMenu button from \"Customize Toolbar...\" panel. It's also available in the context menu."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安装辅助脚本失败"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Finder 菜单点击右键，然后选择自义定工具栏，再将 SwiftyMenu 的按钮拖出来。另外，你还可以在右键菜单中使用 SwiftyMenu。"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "安裝輔助腳本失敗"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Finder 菜單點擊右鍵，然後選擇自義定工具欄，再將 SwiftyMenu 的按鈕拖出來。另外，你還可以在右鍵菜單中使用 SwiftyMenu。"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faites un clic droit sur la barre d'outils du Finder et sortez le bouton SwiftyMenu du panneau « Personnaliser la barre d'outils... ». Il est également disponible dans le menu contextuel."
           }
         }
       }
     },
-    "script_cancel_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancel"
+    "Folders": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Folders"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取消"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目录"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取消"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目錄"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dossiers"
           }
         }
       }
     },
-    "script_content_label" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Script:"
+    "folders_view_title": {
+      "comment": "The title of Folders view",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable SwiftyMenu for the following folders:"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "脚本:"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在下列目录中启用 SwiftyMenu："
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "腳本:"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在下列目錄中啓用 SwiftyMenu："
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer SwiftyMenu pour les dossiers suivants :"
           }
         }
       }
     },
-    "script_name_label" : {
-      "comment" : "Script View",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Name:"
+    "hud_script_installation_failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to install helper script"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "名称:"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安装辅助脚本失败"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "名字:"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安裝輔助腳本失敗"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'installation du script d'aide"
           }
         }
       }
     },
-    "script_name_placeholder" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "My awesome script"
+    "script_cancel_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "我的脚本"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "我的腳本"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
           }
         }
       }
     },
-    "script_save_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save"
+    "script_content_label": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script:"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "脚本:"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "腳本:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script :"
           }
         }
       }
     },
-    "script_shell_label" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shell:"
+    "script_name_label": {
+      "comment": "Script View",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name:"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shell:"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名称:"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shell:"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名字:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom :"
           }
         }
       }
     },
-    "scripts_permission_allow_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allow"
+    "script_name_placeholder": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My awesome script"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "允许"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的脚本"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "允許"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的腳本"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mon super script"
           }
         }
       }
     },
-    "scripts_permission_deny_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deny"
+    "script_save_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "拒绝"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "拒絕"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enregistrer"
           }
         }
       }
     },
-    "scripts_permission_message" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In order to run your customized scripts, a helper script is required to be installed in the Application Scripts folder."
+    "script_shell_label": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "为了能运行你的自定义脚本，我们需要在 Application Scripts 目录安装一个辅助脚本。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "為了能運行你的自定義腳本，我們需要在 Application Scripts 目錄安裝一個輔助腳本。"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell :"
           }
         }
       }
     },
-    "sequoia_enable_button" : {
-      "comment" : "Enable button for Sequoia",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enable SwiftyMenu Automatically"
+    "scripts_permission_allow_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自动启用 SwiftyMenu"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自動啓用 SwiftyMenu"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoriser"
           }
         }
       }
     },
-    "sequoia_enable_message" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "To enable SwiftyMenu, you need to execute the above command in Terminal. You can also use the following auto-enable button, which will automatically enable it after authorizing the script directory."
+    "scripts_permission_deny_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deny"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "启用 SwiftyMenu 需要执行以上指令。您也可以使用自动启用按钮，授权脚本目录后自动启用。"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拒绝"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "啓用 SwiftyMenu 需要執行以上指令。您也可以使用自動啓用按鈕，授權腳本目錄後自動啓用。"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拒絕"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refuser"
           }
         }
       }
     },
-    "show_main_window_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Main window"
+    "scripts_permission_message": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In order to run your customized scripts, a helper script is required to be installed in the Application Scripts folder."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "主窗口"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "为了能运行你的自定义脚本，我们需要在 Application Scripts 目录安装一个辅助脚本。"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "主窗口"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "為了能運行你的自定義腳本，我們需要在 Application Scripts 目錄安裝一個輔助腳本。"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour exécuter vos scripts personnalisés, un script d'aide doit être installé dans le dossier Application Scripts."
           }
         }
       }
     },
-    "show_swifty_button" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show SwiftyMenu in context menu"
+    "sequoia_enable_button": {
+      "comment": "Enable button for Sequoia",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable SwiftyMenu Automatically"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在右键菜单中显示 SwiftyMenu"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动启用 SwiftyMenu"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在右鍵菜單中顯示 SwiftyMenu"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動啓用 SwiftyMenu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer SwiftyMenu automatiquement"
           }
         }
       }
     },
-    "SwiftyMenu" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SwiftyMenu"
+    "sequoia_enable_message": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To enable SwiftyMenu, you need to execute the above command in Terminal. You can also use the following auto-enable button, which will automatically enable it after authorizing the script directory."
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SwiftMenu"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用 SwiftyMenu 需要执行以上指令。您也可以使用自动启用按钮，授权脚本目录后自动启用。"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SwiftyMenu"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "啓用 SwiftyMenu 需要執行以上指令。您也可以使用自動啓用按鈕，授權腳本目錄後自動啓用。"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour activer SwiftyMenu, vous devez exécuter la commande ci-dessus dans Terminal. Vous pouvez également utiliser le bouton d'activation automatique suivant, qui l'activera automatiquement après avoir autorisé le répertoire de scripts."
           }
         }
       }
     },
-    "system_preferences_button" : {
-      "comment" : "Enable View",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open System Settings"
+    "show_main_window_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Main window"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打开系统设置"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主窗口"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "打開系統設定"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主窗口"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fenêtre principale"
           }
         }
       }
     },
-    "system_preferences_introduction" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Please enable SwiftyMenu in\nSystem Preferences → Extensions → File Providers"
+    "show_swifty_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show SwiftyMenu in context menu"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请先启用 SwiftyMenu\n\n系统设置 → 扩展 → Finder 扩展"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在右键菜单中显示 SwiftyMenu"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請先啓用 SwiftyMenu\n\n系統設置 → 擴展 → Finder 擴展"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在右鍵菜單中顯示 SwiftyMenu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher SwiftyMenu dans le menu contextuel"
           }
         }
       }
     },
-    "system_preferences_introduction_15_2" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Please enable SwiftyMenu in\nSystem Settings → General → Finder Extensions"
+    "SwiftyMenu": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请先启用 SwiftyMenu\n\n系统设置 → 通用 → 登录项与扩展 → 文件提供程序"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftMenu"
           }
         },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請先啓用 SwiftyMenu\n\n系統設定 → 一般 → 登入項目與延伸功能 → 檔案供應商"
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        }
+      }
+    },
+    "system_preferences_button": {
+      "comment": "Enable View",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open System Settings"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开系统设置"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打開系統設定"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir les Réglages Système"
+          }
+        }
+      }
+    },
+    "system_preferences_introduction": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please enable SwiftyMenu in\nSystem Preferences → Extensions → File Providers"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请先启用 SwiftyMenu\n\n系统设置 → 扩展 → Finder 扩展"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請先啓用 SwiftyMenu\n\n系統設置 → 擴展 → Finder 擴展"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veuillez activer SwiftyMenu dans\nRéglages Système → Extensions → Fournisseurs de fichiers"
+          }
+        }
+      }
+    },
+    "system_preferences_introduction_15_2": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please enable SwiftyMenu in\nSystem Settings → General → Finder Extensions"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请先启用 SwiftyMenu\n\n系统设置 → 通用 → 登录项与扩展 → 文件提供程序"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請先啓用 SwiftyMenu\n\n系統設定 → 一般 → 登入項目與延伸功能 → 檔案供應商"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veuillez activer SwiftyMenu dans\nRéglages Système → Général → Extensions du Finder"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
