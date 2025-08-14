@@ -1,0 +1,1 @@
+finder버튼,액션,메뉴,컨텍스트메뉴,단축키,iterm,플러그인,액션,sublime,findersync

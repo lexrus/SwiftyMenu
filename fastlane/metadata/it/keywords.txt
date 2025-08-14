@@ -1,0 +1,1 @@
+pulsante finder,azioni,menu,menu contestuale,scorciatoie,iterm,plugin,azioni,sublime,findersync

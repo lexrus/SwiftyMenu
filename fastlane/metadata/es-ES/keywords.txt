@@ -1,0 +1,1 @@
+botón finder,acciones,menú,menú contextual,atajos,iterm,plugin,acciones,sublime,findersync

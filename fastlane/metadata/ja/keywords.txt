@@ -1,0 +1,1 @@
+finderボタン,アクション,メニュー,コンテキストメニュー,ショートカット,iterm,プラグイン,アクション,sublime,findersync
