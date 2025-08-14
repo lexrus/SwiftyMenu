@@ -22,6 +22,7 @@
 		6BA75987263A83C60055903C /* FolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderModel.swift; sourceTree = "<group>"; };
 		D71F43392653FFD0005A511E /* Runner+Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Runner+Application.swift"; sourceTree = "<group>"; };
 		D71F433D2653FFE7005A511E /* Runner+Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Runner+Folder.swift"; sourceTree = "<group>"; };
+		D71F54182E4D873A00FBB061 /* SwiftyMenu.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftyMenu.xcconfig; sourceTree = "<group>"; };
 		D74B6EF12638639D00FAA85C /* SwiftyMenuKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMenuKit.swift; sourceTree = "<group>"; };
 		D77FA5672658A3D5003B2D1A /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		D7A38A64263C54ED00838B73 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 				D74B6EE32638636F00FAA85C /* SwiftyMenuKit */,
 				D72F849725278634003F3CB3 /* Products */,
 				D74B6EEF2638637C00FAA85C /* Frameworks */,
+				D71F54182E4D873A00FBB061 /* SwiftyMenu.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +190,7 @@
 /* Begin XCBuildConfiguration section */
 		D72F84A725278635003F3CB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54182E4D873A00FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -240,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -253,6 +256,7 @@
 		};
 		D72F84A825278635003F3CB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54182E4D873A00FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -299,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
@@ -311,6 +315,7 @@
 		};
 		D7BF029F2652A24800ADFBE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54182E4D873A00FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +323,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = NO;
@@ -331,8 +336,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Runner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -343,6 +348,7 @@
 		};
 		D7BF02A02652A24800ADFBE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54182E4D873A00FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,7 +356,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = NO;
@@ -363,8 +369,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Runner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

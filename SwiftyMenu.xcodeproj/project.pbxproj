@@ -122,6 +122,7 @@
 		D71014AE2642DAA400132B09 /* MacEditorTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacEditorTextView.swift; sourceTree = "<group>"; };
 		D7118384264ADA2800A47330 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
 		D718C2D5266683F3004B6B5B /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftyMenu.xcconfig; sourceTree = "<group>"; };
 		D72F849625278634003F3CB3 /* SwiftyMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72F849B25278634003F3CB3 /* EnableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableView.swift; sourceTree = "<group>"; };
 		D72F849D25278634003F3CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				D74E6BB02860C3DD0075544C /* README.md */,
+				D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */,
 				D77FA579265A7178003B2D1A /* SwiftyMenuRunner.xcodeproj */,
 				D72F849825278634003F3CB3 /* SwiftyMenu */,
 				D72F84B22527864D003F3CB3 /* SwiftyMenuSync */,
@@ -482,6 +484,7 @@
 /* Begin XCBuildConfiguration section */
 		D72F84A725278635003F3CB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -537,7 +540,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -550,6 +553,7 @@
 		};
 		D72F84A825278635003F3CB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -599,7 +603,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=200 -Xfrontend -warn-long-expression-type-checking=200";
@@ -611,13 +615,14 @@
 		};
 		D72F84AA25278635003F3CB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftyMenu/SwiftyMenu.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMenu/Preview Content\"";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -631,8 +636,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -643,13 +648,14 @@
 		};
 		D72F84AB25278635003F3CB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftyMenu/SwiftyMenu.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMenu/Preview Content\"";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -663,8 +669,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -675,12 +681,13 @@
 		};
 		D72F84BB2527864D003F3CB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SwiftyMenuSync/SwiftyMenuSync.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -693,8 +700,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -706,12 +713,13 @@
 		};
 		D72F84BC2527864D003F3CB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71F54152E4D86A100FBB061 /* SwiftyMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SwiftyMenuSync/SwiftyMenuSync.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -724,8 +732,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.lex.SwiftyMenu.Sync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

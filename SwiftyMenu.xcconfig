@@ -1,0 +1,14 @@
+//
+//  SwiftyMenu.xcconfig
+//  SwiftyMenu
+//
+//  Created by Lex on 8/14/25.
+//  Copyright © 2025 lex.sh. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+MARKETING_VERSION = 1.2
+CURRENT_PROJECT_VERSION = 21
+MACOSX_DEPLOYMENT_TARGET = 14.6
