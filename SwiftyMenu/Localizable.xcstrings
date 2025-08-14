@@ -27,6 +27,36 @@
             "state": "translated",
             "value": "關於"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリについて"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "정보"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni"
+          }
         }
       }
     },
@@ -56,6 +86,36 @@
             "state": "translated",
             "value": "Actions"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アクション"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "액션"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acciones"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktionen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Azioni"
+          }
         }
       }
     },
@@ -83,6 +143,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter une application"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリケーションを追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "애플리케이션 추가"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar aplicación"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anwendung hinzufügen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi applicazione"
           }
         }
       }
@@ -112,6 +202,36 @@
             "state": "translated",
             "value": "Ajouter copier le chemin"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスのコピーを追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "경로 복사 추가"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar copiar ruta"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pfad kopieren hinzufügen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi copia percorso"
+          }
         }
       }
     },
@@ -139,6 +259,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un dossier"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォルダを追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "폴더 추가"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar carpeta"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordner hinzufügen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi cartella"
           }
         }
       }
@@ -169,6 +319,36 @@
             "state": "translated",
             "value": "Ajouter un script"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スクリプトを追加"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스크립트 추가"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar script"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skript hinzufügen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi script"
+          }
         }
       }
     },
@@ -197,6 +377,36 @@
             "state": "translated",
             "value": "Annuler"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla"
+          }
         }
       }
     },
@@ -224,6 +434,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Masquer les autres lors de l'ouverture"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "起動時に他のアプリを隠す"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 시 다른 앱 숨기기"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocultar otras al abrir"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andere beim Öffnen ausblenden"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nascondi altre all'apertura"
           }
         }
       }
@@ -254,6 +494,36 @@
             "state": "translated",
             "value": "Nom de l'application"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリケーション名"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "애플리케이션 이름"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre de la aplicación"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anwendungsname"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome applicazione"
+          }
         }
       }
     },
@@ -281,6 +551,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enregistrer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guardar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speichern"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva"
           }
         }
       }
@@ -310,6 +610,36 @@
             "state": "translated",
             "value": "Choisir une application"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリケーションを選択"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "애플리케이션 선택"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elegir una aplicación"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Anwendung auswählen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli un'applicazione"
+          }
         }
       }
     },
@@ -337,6 +667,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Réduire le menu contextuel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コンテキストメニューを折りたたむ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "컨텍스트 메뉴 접기"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contraer menú contextual"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontextmenü einklappen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprimi menu contestuale"
           }
         }
       }
@@ -367,6 +727,36 @@
             "state": "translated",
             "value": "Copié dans le presse-papiers"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリップボードにコピーしました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "클립보드에 복사되었습니다"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado al portapapeles"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In die Zwischenablage kopiert"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiato negli appunti"
+          }
         }
       }
     },
@@ -395,6 +785,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Copier le chemin"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスをコピー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "경로 복사"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar ruta"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pfad kopieren"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copia percorso"
           }
         }
       }
@@ -425,6 +845,36 @@
             "state": "translated",
             "value": "Activer"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有効にする"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "활성화"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Habilitar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktivieren"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abilita"
+          }
         }
       }
     },
@@ -453,6 +903,36 @@
             "state": "translated",
             "value": "🎉 Hourra ! SwiftyMenu est activé."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 やったね！SwiftyMenuが有効になりました。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 만세! SwiftyMenu가 활성화되었습니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 ¡Hurra! SwiftyMenu está habilitado."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Hurra! SwiftyMenu ist aktiviert."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Evviva! SwiftyMenu è abilitato."
+          }
         }
       }
     },
@@ -480,6 +960,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Faites un clic droit sur la barre d'outils du Finder et sortez le bouton SwiftyMenu du panneau « Personnaliser la barre d'outils... ». Il est également disponible dans le menu contextuel."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finderのツールバーを右クリックして、「ツールバーをカスタマイズ...」パネルからSwiftyMenuボタンを引き出してください。コンテキストメニューでも利用できます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder 도구막대를 우클릭하고 \"도구막대 사용자화...\" 패널에서 SwiftyMenu 버튼을 끌어내세요. 컨텍스트 메뉴에서도 사용할 수 있습니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz clic derecho en la barra de herramientas del Finder y saca el botón SwiftyMenu del panel \"Personalizar barra de herramientas...\". También está disponible en el menú contextual."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klicken Sie mit der rechten Maustaste auf die Symbolleiste des Finders und ziehen Sie die SwiftyMenu-Schaltfläche aus dem Panel \"Symbolleiste anpassen...\". Es ist auch im Kontextmenü verfügbar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai clic destro sulla barra degli strumenti del Finder e trascina il pulsante SwiftyMenu dal pannello \"Personalizza barra degli strumenti...\". È disponibile anche nel menu contestuale."
           }
         }
       }
@@ -510,6 +1020,36 @@
             "state": "translated",
             "value": "Dossiers"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォルダ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "폴더"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carpetas"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordner"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cartelle"
+          }
         }
       }
     },
@@ -538,6 +1078,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Activer SwiftyMenu pour les dossiers suivants :"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下のフォルダでSwiftyMenuを有効にする："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 폴더에서 SwiftyMenu 활성화:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Habilitar SwiftyMenu para las siguientes carpetas:"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu für die folgenden Ordner aktivieren:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abilita SwiftyMenu per le seguenti cartelle:"
           }
         }
       }
@@ -568,6 +1138,36 @@
             "state": "translated",
             "value": "Échec de l'installation du script d'aide"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルパースクリプトのインストールに失敗しました"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도우미 스크립트 설치 실패"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error al instalar el script auxiliar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installation des Hilfsskripts fehlgeschlagen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Installazione dello script di supporto fallita"
+          }
         }
       }
     },
@@ -596,6 +1196,36 @@
             "state": "translated",
             "value": "Annuler"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla"
+          }
         }
       }
     },
@@ -623,6 +1253,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Script :"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スクリプト："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스크립트:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script:"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skript:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script:"
           }
         }
       }
@@ -653,6 +1313,36 @@
             "state": "translated",
             "value": "Nom :"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이름:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre:"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome:"
+          }
         }
       }
     },
@@ -680,6 +1370,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mon super script"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "私の素晴らしいスクリプト"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나의 멋진 스크립트"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mi script increíble"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mein tolles Skript"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il mio script fantastico"
           }
         }
       }
@@ -709,6 +1429,36 @@
             "state": "translated",
             "value": "Enregistrer"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guardar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speichern"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva"
+          }
         }
       }
     },
@@ -736,6 +1486,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Shell :"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "シェル："
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "셸:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
           }
         }
       }
@@ -765,6 +1545,36 @@
             "state": "translated",
             "value": "Autoriser"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "許可"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "허용"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlauben"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti"
+          }
         }
       }
     },
@@ -793,6 +1603,36 @@
             "state": "translated",
             "value": "Refuser"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拒否"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "거부"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denegar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verweigern"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nega"
+          }
         }
       }
     },
@@ -820,6 +1660,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pour exécuter vos scripts personnalisés, un script d'aide doit être installé dans le dossier Application Scripts."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カスタムスクリプトを実行するには、Application Scriptsフォルダにヘルパースクリプトをインストールする必要があります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자 정의 스크립트를 실행하려면 Application Scripts 폴더에 도우미 스크립트를 설치해야 합니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para ejecutar tus scripts personalizados, se requiere instalar un script auxiliar en la carpeta Application Scripts."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um Ihre benutzerdefinierten Skripte auszuführen, muss ein Hilfsskript im Ordner Application Scripts installiert werden."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per eseguire i tuoi script personalizzati, è necessario installare uno script di supporto nella cartella Application Scripts."
           }
         }
       }
@@ -851,6 +1721,36 @@
             "state": "translated",
             "value": "Activer SwiftyMenu automatiquement"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenuを自動的に有効にする"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu 자동 활성화"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Habilitar SwiftyMenu automáticamente"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu automatisch aktivieren"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abilita SwiftyMenu automaticamente"
+          }
         }
       }
     },
@@ -880,6 +1780,36 @@
             "state": "translated",
             "value": "Pour activer SwiftyMenu, vous devez exécuter la commande ci-dessus dans Terminal. Vous pouvez également utiliser le bouton d'activation automatique suivant, qui l'activera automatiquement après avoir autorisé le répertoire de scripts."
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenuを有効にするには、ターミナルで上記のコマンドを実行する必要があります。以下の自動有効化ボタンを使用することもできます。これはスクリプトディレクトリを認証した後、自動的に有効にします。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu를 활성화하려면 터미널에서 위의 명령을 실행해야 합니다. 다음 자동 활성화 버튼을 사용할 수도 있습니다. 이는 스크립트 디렉토리를 인증한 후 자동으로 활성화됩니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para habilitar SwiftyMenu, necesitas ejecutar el comando anterior en Terminal. También puedes usar el siguiente botón de habilitación automática, que lo habilitará automáticamente después de autorizar el directorio de scripts."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um SwiftyMenu zu aktivieren, müssen Sie den obigen Befehl im Terminal ausführen. Sie können auch die folgende automatische Aktivierungsschaltfläche verwenden, die es automatisch aktiviert, nachdem Sie das Skriptverzeichnis autorisiert haben."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per abilitare SwiftyMenu, devi eseguire il comando sopra nel Terminale. Puoi anche utilizzare il seguente pulsante di abilitazione automatica, che lo abiliterà automaticamente dopo aver autorizzato la directory degli script."
+          }
         }
       }
     },
@@ -907,6 +1837,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fenêtre principale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メインウィンドウ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메인 창"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ventana principal"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hauptfenster"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finestra principale"
           }
         }
       }
@@ -936,6 +1896,36 @@
             "state": "translated",
             "value": "Afficher SwiftyMenu dans le menu contextuel"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コンテキストメニューにSwiftyMenuを表示"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "컨텍스트 메뉴에 SwiftyMenu 표시"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar SwiftyMenu en el menú contextual"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu im Kontextmenü anzeigen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra SwiftyMenu nel menu contestuale"
+          }
         }
       }
     },
@@ -960,6 +1950,36 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "it": {
           "stringUnit": {
             "state": "translated",
             "value": "SwiftyMenu"
@@ -993,6 +2013,36 @@
             "state": "translated",
             "value": "Ouvrir les Réglages Système"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定を開く"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정 열기"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Configuración del Sistema"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systemeinstellungen öffnen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri Impostazioni di Sistema"
+          }
         }
       }
     },
@@ -1021,6 +2071,36 @@
             "state": "translated",
             "value": "Veuillez activer SwiftyMenu dans\nRéglages Système → Extensions → Fournisseurs de fichiers"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenuを有効にしてください\nシステム設定 → 機能拡張 → ファイルプロバイダ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu를 활성화하세요\n시스템 설정 → 확장 → 파일 제공업체"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por favor habilita SwiftyMenu en\nConfiguración del Sistema → Extensiones → Proveedores de archivos"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitte aktivieren Sie SwiftyMenu in\nSystemeinstellungen → Erweiterungen → Dateianbieter"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abilita SwiftyMenu in\nImpostazioni di Sistema → Estensioni → Provider di file"
+          }
         }
       }
     },
@@ -1048,6 +2128,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Veuillez activer SwiftyMenu dans\nRéglages Système → Général → Extensions du Finder"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenuを有効にしてください\nシステム設定 → 一般 → Finder機能拡張"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu를 활성화하세요\n시스템 설정 → 일반 → Finder 확장"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por favor habilita SwiftyMenu en\nConfiguración del Sistema → General → Extensiones del Finder"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitte aktivieren Sie SwiftyMenu in\nSystemeinstellungen → Allgemein → Finder-Erweiterungen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abilita SwiftyMenu in\nImpostazioni di Sistema → Generali → Estensioni Finder"
           }
         }
       }
