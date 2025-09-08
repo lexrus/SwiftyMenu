@@ -56,11 +56,35 @@
             "state": "translated",
             "value": "Aggiungi cartella corrente"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar pasta atual"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить текущую папку"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "huidige map toevoegen"
+          }
         }
       }
     },
     "Error": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -108,11 +132,35 @@
             "state": "translated",
             "value": "Errore"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erro"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ошибка"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "fout"
+          }
         }
       }
     },
     "Okay": {
       "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -159,6 +207,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ОК"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ok"
           }
         }
       }

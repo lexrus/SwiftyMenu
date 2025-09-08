@@ -57,6 +57,24 @@
             "state": "translated",
             "value": "Informazioni"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О программе"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over"
+          }
         }
       }
     },
@@ -116,6 +134,24 @@
             "state": "translated",
             "value": "Azioni"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ações"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Действия"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acties"
+          }
         }
       }
     },
@@ -173,6 +209,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aggiungi applicazione"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar Aplicação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить приложение"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applicatie toevoegen"
           }
         }
       }
@@ -232,6 +286,24 @@
             "state": "translated",
             "value": "Aggiungi copia percorso"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar Copiar Caminho"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить копирование пути"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer pad toevoegen"
+          }
         }
       }
     },
@@ -289,6 +361,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aggiungi cartella"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar Pasta"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить папку"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Map toevoegen"
           }
         }
       }
@@ -349,6 +439,24 @@
             "state": "translated",
             "value": "Aggiungi script"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar Script"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить скрипт"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script toevoegen"
+          }
         }
       }
     },
@@ -407,6 +515,24 @@
             "state": "translated",
             "value": "Annulla"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuleer"
+          }
         }
       }
     },
@@ -464,6 +590,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nascondi altre all'apertura"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocultar outras ao abrir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скрыть другие при открытии"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verberg anderen bij openen"
           }
         }
       }
@@ -524,6 +668,24 @@
             "state": "translated",
             "value": "Nome applicazione"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome da aplicação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название приложения"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applicatienaam"
+          }
         }
       }
     },
@@ -581,6 +743,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Salva"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar"
           }
         }
       }
@@ -640,6 +820,24 @@
             "state": "translated",
             "value": "Scegli un'applicazione"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolher uma aplicação"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите приложение"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies een applicatie"
+          }
         }
       }
     },
@@ -697,6 +895,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Comprimi menu contestuale"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recolher menu contextual"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свернуть контекстное меню"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klap contextmenu in"
           }
         }
       }
@@ -757,6 +973,24 @@
             "state": "translated",
             "value": "Copiato negli appunti"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiado para a área de transferência"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировано в буфер обмена"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gekopieerd naar klembord"
+          }
         }
       }
     },
@@ -815,6 +1049,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Copia percorso"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copiar Caminho"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скопировать путь"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer pad"
           }
         }
       }
@@ -875,6 +1127,24 @@
             "state": "translated",
             "value": "Abilita"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inschakelen"
+          }
         }
       }
     },
@@ -933,6 +1203,24 @@
             "state": "translated",
             "value": "🎉 Evviva! SwiftyMenu è abilitato."
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Ótimo! SwiftyMenu está ativado."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Ура! SwiftyMenu включен."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🎉 Hoera! SwiftyMenu is ingeschakeld."
+          }
         }
       }
     },
@@ -990,6 +1278,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fai clic destro sulla barra degli strumenti del Finder e trascina il pulsante SwiftyMenu dal pannello \"Personalizza barra degli strumenti...\". È disponibile anche nel menu contestuale."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clique com o botão direito na barra de ferramentas do Finder e arraste o botão SwiftyMenu do painel \"Personalizar Barra de Ferramentas...\". Também está disponível no menu contextual."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Щелкните правой кнопкой мыши на панели инструментов Finder и перетащите кнопку SwiftyMenu из панели \"Настроить панель инструментов...\". Также доступно в контекстном меню."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klik met de rechtermuisknop op de werkbalk van Finder en sleep de SwiftyMenu-knop uit het paneel \"Werkbalk aanpassen...\". Het is ook beschikbaar in het contextmenu."
           }
         }
       }
@@ -1050,6 +1356,24 @@
             "state": "translated",
             "value": "Cartelle"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pastas"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Папки"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mappen"
+          }
         }
       }
     },
@@ -1108,6 +1432,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Abilita SwiftyMenu per le seguenti cartelle:"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar SwiftyMenu para as seguintes pastas:"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включить SwiftyMenu для следующих папок:"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schakel SwiftyMenu in voor de volgende mappen:"
           }
         }
       }
@@ -1168,6 +1510,24 @@
             "state": "translated",
             "value": "Installazione dello script di supporto fallita"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao instalar script auxiliar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось установить вспомогательный скрипт"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kon hulpscript niet installeren"
+          }
         }
       }
     },
@@ -1226,6 +1586,24 @@
             "state": "translated",
             "value": "Annulla"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отменить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuleer"
+          }
         }
       }
     },
@@ -1280,6 +1658,24 @@
           }
         },
         "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script:"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Script:"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скрипт:"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "Script:"
@@ -1343,6 +1739,24 @@
             "state": "translated",
             "value": "Nome:"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome:"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Имя:"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam:"
+          }
         }
       }
     },
@@ -1400,6 +1814,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Il mio script fantastico"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meu script incrível"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мой потрясающий скрипт"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mijn geweldige script"
           }
         }
       }
@@ -1459,6 +1891,24 @@
             "state": "translated",
             "value": "Salva"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar"
+          }
         }
       }
     },
@@ -1513,6 +1963,24 @@
           }
         },
         "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shell:"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оболочка:"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "Shell:"
@@ -1575,6 +2043,24 @@
             "state": "translated",
             "value": "Consenti"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toestaan"
+          }
         }
       }
     },
@@ -1633,6 +2119,24 @@
             "state": "translated",
             "value": "Nega"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отклонить"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weigeren"
+          }
         }
       }
     },
@@ -1690,6 +2194,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Per eseguire i tuoi script personalizzati, è necessario installare uno script di supporto nella cartella Application Scripts."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para executar seus scripts personalizados, um script auxiliar deve ser instalado na pasta Application Scripts."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для выполнения ваших пользовательских скриптов требуется установить вспомогательный скрипт в папку Application Scripts."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om uw aangepaste scripts uit te voeren, moet een hulpscript worden geïnstalleerd in de map Application Scripts."
           }
         }
       }
@@ -1751,6 +2273,24 @@
             "state": "translated",
             "value": "Abilita SwiftyMenu automaticamente"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar SwiftyMenu Automaticamente"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включить SwiftyMenu автоматически"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu automatisch inschakelen"
+          }
         }
       }
     },
@@ -1810,6 +2350,24 @@
             "state": "translated",
             "value": "Per abilitare SwiftyMenu, devi eseguire il comando sopra nel Terminale. Puoi anche utilizzare il seguente pulsante di abilitazione automatica, che lo abiliterà automaticamente dopo aver autorizzato la directory degli script."
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para ativar o SwiftyMenu, você deve executar o comando acima no Terminal. Você também pode usar o botão de ativação automática abaixo, que irá ativá-lo automaticamente após autorizar o diretório de scripts."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для включения SwiftyMenu необходимо выполнить указанную выше команду в Терминале. Вы также можете использовать кнопку автоматического включения ниже, которая автоматически включит его после авторизации папки скриптов."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om SwiftyMenu in te schakelen, moet u het bovenstaande commando uitvoeren in Terminal. U kunt ook de volgende automatische inschakeling knop gebruiken, die het automatisch inschakelt na autorisatie van de scriptmap."
+          }
         }
       }
     },
@@ -1867,6 +2425,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Finestra principale"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Janela principal"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основное окно"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoofdvenster"
           }
         }
       }
@@ -1926,6 +2502,24 @@
             "state": "translated",
             "value": "Mostra SwiftyMenu nel menu contestuale"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar SwiftyMenu no menu contextual"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показать SwiftyMenu в контекстном меню"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon SwiftyMenu in contextmenu"
+          }
         }
       }
     },
@@ -1980,6 +2574,24 @@
           }
         },
         "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SwiftyMenu"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "SwiftyMenu"
@@ -2043,6 +2655,24 @@
             "state": "translated",
             "value": "Apri Impostazioni di Sistema"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Configurações do Sistema"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть системные настройки"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open systeeminstellingen"
+          }
         }
       }
     },
@@ -2101,6 +2731,24 @@
             "state": "translated",
             "value": "Abilita SwiftyMenu in\nImpostazioni di Sistema → Estensioni → Provider di file"
           }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por favor, ative o SwiftyMenu em\nConfigurações do Sistema → Extensões → Provedores de Arquivo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пожалуйста, включите SwiftyMenu в\nСистемные настройки → Расширения → Поставщики файлов"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schakel SwiftyMenu in via\nSysteemvoorkeuren → Extensies → Bestandsproviders"
+          }
         }
       }
     },
@@ -2158,6 +2806,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Abilita SwiftyMenu in\nImpostazioni di Sistema → Generali → Estensioni Finder"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por favor, ative o SwiftyMenu em\nConfigurações do Sistema → Geral → Extensões do Finder"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пожалуйста, включите SwiftyMenu в\nСистемные настройки → Общие → Расширения Finder"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schakel SwiftyMenu in via\nSysteeminstellingen → Algemeen → Finder-extensies"
           }
         }
       }

@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lexrus/AppAboutView",
       "state" : {
-        "revision" : "a50a8d3ba2746278301fa1dba918c38822b41fc9",
-        "version" : "0.0.4"
+        "revision" : "d557f95c8be3da6a46c9428f42ffafed78d79cee",
+        "version" : "0.0.6"
       }
     }
   ],
