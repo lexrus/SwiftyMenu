@@ -1,0 +1,2 @@
+SwiftyMenu é uma extensão inteligente para o Finder.
+Apresenta um menu personalizável para abrir rapidamente pastas ou arquivos selecionados com seus aplicativos favoritos.

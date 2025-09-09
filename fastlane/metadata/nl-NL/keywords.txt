@@ -1,0 +1,1 @@
+finder knop,acties,menu,contextmenu,snelkoppelingen,iterm,plugin,acties,sublime,findersync
