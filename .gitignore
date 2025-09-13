@@ -71,4 +71,4 @@ DerivedData/
 fastlane/Appfile
 fastlane/screenshoots
 fastlane/keys
-fastlane/review_information
+fastlane/metadata/review_information
