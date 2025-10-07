@@ -11,6 +11,8 @@
 
 > A powerful macOS Finder extension that adds customizable context menus to quickly open selected folders or files with your favorite applications and scripts.
 
+> This open-source version represents the original core functionality of SwiftyMenu. The App Store version includes additional features such as Terminal Actions and AppleScript Actions, which are not available in this open-source project.
+
 ![swiftymenu](https://user-images.githubusercontent.com/219689/174636051-dd86c7fe-0b3d-4863-9a0d-ecd986f6a3c9.png)
 
 ## Structure
